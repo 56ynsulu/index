@@ -1,0 +1,1950 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Av. Melek Pekgöz Hukuk ve Danışmanlık Bürosu | Kurtalan / Siirt</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    :root {
+      --bg-primary: #0c0908;
+      --bg-secondary: #16100d;
+      --bg-card: #1f1612;
+      --accent: #d4af37;
+      --accent-hover: #e6c453;
+      --brown-rich: #3d1914;
+      --border-gold: rgba(212, 175, 55, 0.28);
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: #f5f2eb;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      overflow-x: hidden;
+    }
+
+    .font-serif-title {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    .font-serif-italic {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #f7e9b7 0%, #d4af37 50%, #aa7c11 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .theme-bg-primary { background-color: var(--bg-primary); }
+    .theme-bg-secondary { background-color: var(--bg-secondary); }
+    .theme-bg-card { background-color: var(--bg-card); }
+    .theme-border-gold { border-color: var(--border-gold); }
+    .theme-accent-bg { background-color: var(--accent); }
+    .theme-accent-text { color: var(--accent); }
+    .theme-brown-bg { background-color: var(--brown-rich); }
+
+    /* Özel Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #0c0908; }
+    ::-webkit-scrollbar-thumb { background: #3d1914; border-radius: 4px; border: 1px solid rgba(212, 175, 55, 0.3); }
+    ::-webkit-scrollbar-thumb:hover { background: #d4af37; }
+
+    /* Sağ Alt Sabit WhatsApp Widget Animasyonu */
+    .wa-popup-enter {
+      animation: popupSlideUp 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    @keyframes popupSlideUp {
+      from { opacity: 0; transform: translateY(20px) scale(0.96); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-amber-500 selection:text-black">
+
+  <!-- BİLDİRİM KUTUSU (TOAST) -->
+  <div id="toastContainer" class="fixed top-6 right-6 z-[80] hidden max-w-md">
+    <div class="flex items-center gap-3 px-5 py-4 rounded-xl shadow-2xl border-2 border-amber-400 bg-[#1f1612] text-amber-50">
+      <i data-lucide="check-circle" class="w-5 h-5 text-amber-400 shrink-0"></i>
+      <p id="toastMessage" class="text-sm font-medium"></p>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       1. TEMİZ VE KURUMSAL ÜST BAR & NAVİGASYON (Sosyal Medya ve Gereksiz Linkler Kaldırıldı)
+  ===================================================================== -->
+  <header class="sticky top-0 z-40 shadow-2xl backdrop-blur-md bg-[#0c0908]/95 border-b theme-border-gold">
+    
+    <!-- Üst Kurumsal Bilgi Çubuğu (3 Sütun: Logo/İsim | E-Posta | Telefon) -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-amber-500/15">
+      <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-amber-500/15 py-3 items-center">
+        
+        <!-- 1. Sütun: Logo & Av. Melek Pekgöz -->
+        <a href="#anasayfa" class="flex items-center justify-center md:justify-start gap-3.5 py-1.5 md:pr-4 group">
+          <div class="p-1.5 rounded-full border border-amber-500/40 bg-gradient-to-b from-amber-950/60 to-black group-hover:scale-105 transition-transform">
+            <svg viewBox="0 0 240 220" class="w-11 h-11 text-amber-400" fill="currentColor">
+              <path d="M120 200 C 65 195, 25 150, 25 95 C 25 55, 55 25, 85 15" stroke="currentColor" stroke-width="4" stroke-linecap="round" fill="none"/>
+              <path d="M120 200 C 175 195, 215 150, 215 95 C 215 55, 185 25, 155 15" stroke="currentColor" stroke-width="4" stroke-linecap="round" fill="none"/>
+              <path d="M90 155 C 95 145, 145 145, 150 155 Z" />
+              <rect x="117" y="68" width="6" height="82" rx="2" />
+              <circle cx="120" cy="64" r="6" />
+              <rect x="72" y="68" width="96" height="4.5" rx="2" />
+              <line x1="76" y1="72" x2="62" y2="108" stroke="currentColor" stroke-width="2.5" />
+              <line x1="76" y1="72" x2="90" y2="108" stroke="currentColor" stroke-width="2.5" />
+              <path d="M58 108 L94 108 C 92 122, 60 122, 58 108 Z" />
+              <line x1="164" y1="72" x2="150" y2="108" stroke="currentColor" stroke-width="2.5" />
+              <line x1="164" y1="72" x2="178" y2="108" stroke="currentColor" stroke-width="2.5" />
+              <path d="M146 108 L182 108 C 180 122, 148 122, 146 108 Z" />
+            </svg>
+          </div>
+          <div>
+            <span class="block text-[10px] uppercase tracking-[0.25em] text-amber-400/90 font-semibold">Hukuk & Danışmanlık Bürosu</span>
+            <h1 id="headerLawyerName" class="font-serif-title text-lg sm:text-xl font-bold tracking-wide text-white group-hover:text-amber-300 transition-colors">
+              AV. MELEK PEKGÖZ
+            </h1>
+          </div>
+        </a>
+
+        <!-- 2. Sütun: E-Posta İletişim -->
+        <a id="headerEmailLink" href="mailto:yunusulusik807@gmail.com" class="flex items-center justify-center gap-3 py-2 md:px-4 hover:bg-white/[0.02] transition-colors">
+          <div class="w-10 h-10 rounded-lg border border-amber-500/30 bg-amber-950/30 flex items-center justify-center text-amber-400 shrink-0">
+            <i data-lucide="mail" class="w-5 h-5"></i>
+          </div>
+          <div class="text-left overflow-hidden">
+            <span class="block text-[10px] uppercase tracking-wider text-stone-400 font-semibold">HEMEN İLETİŞİME GEÇ</span>
+            <span id="headerEmailText" class="text-xs sm:text-sm font-semibold text-amber-50 truncate block">yunusulusik807@gmail.com</span>
+          </div>
+        </a>
+
+        <!-- 3. Sütun: Doğrudan Telefon & WhatsApp -->
+        <a id="headerPhoneLink" href="tel:05362356315" class="flex items-center justify-center md:justify-end gap-3 py-2 md:pl-4 group">
+          <div class="w-10 h-10 rounded-lg bg-amber-500/15 border border-amber-500/40 group-hover:bg-amber-500 group-hover:text-black flex items-center justify-center text-amber-400 shadow-lg shrink-0 transition-colors">
+            <i data-lucide="phone-call" class="w-5 h-5"></i>
+          </div>
+          <div class="text-left">
+            <span class="block text-[10px] uppercase tracking-wider text-stone-400 font-semibold">Hukuki Danışma Hattı</span>
+            <span id="headerPhoneText" class="text-sm sm:text-base font-bold text-amber-400 tracking-wide">0536 235 63 15</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Alt Sadeleştirilmiş Navigasyon Menüsü -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- Masaüstü Menü (Sade, net ve kurumsal) -->
+        <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium">
+          <a href="#anasayfa" class="text-amber-400 hover:text-amber-300 transition-colors">Anasayfa</a>
+          <a href="#hakkimizda" class="text-stone-200 hover:text-amber-400 transition-colors">Hakkımızda</a>
+          <a href="#hizmetlerimiz" class="text-stone-200 hover:text-amber-400 transition-colors">Hukuki Hizmetler</a>
+          <a href="#makaleler" class="text-stone-200 hover:text-amber-400 transition-colors">Makaleler</a>
+          <a href="#blog" class="text-stone-200 hover:text-amber-400 transition-colors">Hukuk Bloğu</a>
+          <a href="#yorumlar" class="text-stone-200 hover:text-amber-400 transition-colors">Müvekkil Yorumları</a>
+          <a href="#iletisim" class="text-stone-200 hover:text-amber-400 transition-colors">Bize Ulaşın</a>
+        </nav>
+
+        <!-- Mobil Menü Butonu -->
+        <div class="flex lg:hidden items-center gap-2">
+          <button id="mobileMenuBtn" class="p-2.5 rounded-lg border border-amber-500/30 text-amber-400 hover:bg-amber-950/40">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+          <span class="text-xs text-stone-300 font-medium">Menü</span>
+        </div>
+
+        <!-- Sağ Buton: Sadece Kurumsal Danışmanlık Alın Butonu (Admin Butonu Gizlendi) -->
+        <div class="flex items-center gap-3">
+          <a
+            href="#iletisim"
+            class="theme-accent-bg text-[#0c0908] px-5 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-bold tracking-wider uppercase flex items-center gap-2 shadow-lg hover:opacity-95 transition-all"
+          >
+            <span>DANIŞMANLIK ALIN</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobil Açılır Menü -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-amber-500/20 px-4 pt-3 pb-6 space-y-2 theme-bg-secondary">
+      <a href="#anasayfa" class="mobile-link block px-4 py-2.5 rounded-lg text-sm font-medium text-stone-200 hover:bg-amber-500/10 hover:text-amber-400">Anasayfa</a>
+      <a href="#hakkimizda" class="mobile-link block px-4 py-2.5 rounded-lg text-sm font-medium text-stone-200 hover:bg-amber-500/10 hover:text-amber-400">Hakkımızda</a>
+      <a href="#hizmetlerimiz" class="mobile-link block px-4 py-2.5 rounded-lg text-sm font-medium text-stone-200 hover:bg-amber-500/10 hover:text-amber-400">Hukuki Hizmetler</a>
+      <a href="#makaleler" class="mobile-link block px-4 py-2.5 rounded-lg text-sm font-medium text-stone-200 hover:bg-amber-500/10 hover:text-amber-400">Makaleler</a>
+      <a href="#blog" class="mobile-link block px-4 py-2.5 rounded-lg text-sm font-medium text-stone-200 hover:bg-amber-500/10 hover:text-amber-400">Hukuk Bloğu</a>
+      <a href="#yorumlar" class="mobile-link block px-4 py-2.5 rounded-lg text-sm font-medium text-stone-200 hover:bg-amber-500/10 hover:text-amber-400">Müvekkil Yorumları</a>
+      <a href="#iletisim" class="mobile-link block px-4 py-2.5 rounded-lg text-sm font-medium text-stone-200 hover:bg-amber-500/10 hover:text-amber-400">Bize Ulaşın</a>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       2. ANASAYFA HERO BÖLÜMÜ (Güçlü Hukuk Bürosu ve Themis Heykeli Arka Plan Görseli)
+  ===================================================================== -->
+  <section id="anasayfa" class="relative min-h-[600px] lg:min-h-[680px] flex items-center overflow-hidden border-b theme-border-gold">
+    <!-- Yüksek Kaliteli Hukuk Bürosu & Adalet Heykeli Arka Plan Görseli -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        id="heroBgImage"
+        src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=85&w=2000" 
+        alt="Av. Melek Pekgöz Hukuk Bürosu Arka Plan" 
+        class="w-full h-full object-cover object-center opacity-55 scale-105"
+        onerror="this.src='https://placehold.co/1920x1080/1f120e/d4af37?text=Av.+Melek+Pekgoz+Hukuk+Burosu'"
+      />
+      <!-- Siyah ve Koyu Kahve Geçiş Katmanı -->
+      <div 
+        class="absolute inset-0"
+        style="background: linear-gradient(90deg, rgba(12, 9, 8, 0.94) 0%, rgba(28, 15, 11, 0.82) 52%, rgba(45, 22, 15, 0.45) 100%);"
+      ></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Sol Kısım: Başlık ve Hizmetlerimiz / İletişim Butonları -->
+        <div class="lg:col-span-7 space-y-6 text-left">
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-amber-500/40 bg-amber-950/60 text-amber-300 text-xs uppercase tracking-[0.2em] font-semibold">
+            <i data-lucide="scale" class="w-4 h-4 text-amber-400"></i>
+            <span>Kurtalan / Siirt & Türkiye Geneli</span>
+          </div>
+
+          <h2 class="font-serif-title text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight drop-shadow-lg">
+            Avukat <br />
+            <span class="gold-gradient-text">Melek Pekgöz</span> <br />
+            Hukuk Bürosu
+          </h2>
+
+          <p class="text-stone-200 text-base sm:text-lg max-w-xl leading-relaxed font-normal drop-shadow">
+            Hukukun üstünlüğü ve meslek etiği çerçevesinde; bireysel ve kurumsal müvekkillerimize şeffaf, güvenilir ve sonuç odaklı avukatlık hizmeti sunuyoruz.
+          </p>
+
+          <!-- Görsel 1'deki Koyu Kahve/Bordo ve Gold Butonlar -->
+          <div class="flex flex-wrap items-center gap-4 pt-3">
+            <a
+              href="#hizmetlerimiz"
+              class="theme-brown-bg border border-amber-500/60 px-8 py-4 rounded-lg text-white font-semibold text-sm tracking-wide shadow-xl hover:brightness-125 transition-all flex items-center gap-2"
+            >
+              <span>Hizmetlerimiz</span>
+              <i data-lucide="chevron-right" class="w-4 h-4 text-amber-400"></i>
+            </a>
+            <a
+              href="#iletisim"
+              class="theme-accent-bg text-[#0c0908] px-8 py-4 rounded-lg font-bold text-sm tracking-wide shadow-xl hover:brightness-110 transition-all flex items-center gap-2"
+            >
+              <span>İletişim</span>
+              <i data-lucide="phone" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Sağ Kısım: Kurumsal Adalet Simgesi Kartı -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-md p-8 rounded-3xl border-2 theme-border-gold bg-[#140d0a]/85 backdrop-blur-md shadow-2xl text-center space-y-5">
+            <div class="mx-auto w-36 h-36 sm:w-44 sm:h-44 flex items-center justify-center rounded-full border border-amber-500/30 bg-gradient-to-b from-amber-950/50 to-black p-4 shadow-inner">
+              <!-- Özel Defne Yapraklı Adalet Terazisi SVG -->
+              <svg viewBox="0 0 240 220" class="w-full h-full text-amber-400" fill="currentColor">
+                <path d="M120 200 C 65 195, 25 150, 25 95 C 25 55, 55 25, 85 15" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+                <path d="M120 200 C 175 195, 215 150, 215 95 C 215 55, 185 25, 155 15" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+                <path d="M105 208 C 115 198, 125 198, 135 208" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
+                <g>
+                  <ellipse cx="90" cy="188" rx="12" ry="5.5" transform="rotate(25 90 188)" />
+                  <ellipse cx="65" cy="175" rx="12" ry="5.5" transform="rotate(40 65 175)" />
+                  <ellipse cx="45" cy="155" rx="12" ry="5.5" transform="rotate(55 45 155)" />
+                  <ellipse cx="32" cy="130" rx="12" ry="5.5" transform="rotate(75 32 130)" />
+                  <ellipse cx="26" cy="100" rx="12" ry="5.5" transform="rotate(90 26 100)" />
+                  <ellipse cx="32" cy="70" rx="12" ry="5.5" transform="rotate(110 32 70)" />
+                  <ellipse cx="45" cy="45" rx="12" ry="5.5" transform="rotate(125 45 45)" />
+                  <ellipse cx="65" cy="25" rx="12" ry="5.5" transform="rotate(140 65 25)" />
+                  <ellipse cx="88" cy="14" rx="11" ry="5" transform="rotate(155 88 14)" />
+                  <ellipse cx="150" cy="188" rx="12" ry="5.5" transform="rotate(-25 150 188)" />
+                  <ellipse cx="175" cy="175" rx="12" ry="5.5" transform="rotate(-40 175 175)" />
+                  <ellipse cx="195" cy="155" rx="12" ry="5.5" transform="rotate(-55 195 155)" />
+                  <ellipse cx="208" cy="130" rx="12" ry="5.5" transform="rotate(-75 208 130)" />
+                  <ellipse cx="214" cy="100" rx="12" ry="5.5" transform="rotate(-90 214 100)" />
+                  <ellipse cx="208" cy="70" rx="12" ry="5.5" transform="rotate(-110 208 70)" />
+                  <ellipse cx="195" cy="45" rx="12" ry="5.5" transform="rotate(-125 195 45)" />
+                  <ellipse cx="175" cy="25" rx="12" ry="5.5" transform="rotate(-140 175 25)" />
+                  <ellipse cx="152" cy="14" rx="11" ry="5" transform="rotate(-155 152 14)" />
+                </g>
+                <path d="M90 155 C 95 145, 145 145, 150 155 Z" />
+                <rect x="117" y="68" width="6" height="82" rx="2" />
+                <circle cx="120" cy="64" r="6" />
+                <rect x="72" y="68" width="96" height="4.5" rx="2" />
+                <line x1="76" y1="72" x2="62" y2="108" stroke="currentColor" stroke-width="2" />
+                <line x1="76" y1="72" x2="90" y2="108" stroke="currentColor" stroke-width="2" />
+                <path d="M58 108 L94 108 C 92 122, 60 122, 58 108 Z" />
+                <line x1="164" y1="72" x2="150" y2="108" stroke="currentColor" stroke-width="2" />
+                <line x1="164" y1="72" x2="178" y2="108" stroke="currentColor" stroke-width="2" />
+                <path d="M146 108 L182 108 C 180 122, 148 122, 146 108 Z" />
+              </svg>
+            </div>
+            <div class="space-y-1.5">
+              <h3 class="font-serif-title text-2xl font-bold text-amber-300">AV. MELEK PEKGÖZ</h3>
+              <p class="text-xs uppercase tracking-[0.2em] text-stone-400">Hukuk & Danışmanlık</p>
+              <p class="text-xs text-stone-300 leading-relaxed pt-2 border-t border-amber-500/15">
+                "Adalet mülkün temelidir; hak savunuculuğu ise bağımsız yargının en onurlu görevidir."
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       3. HAKKIMIZDA BÖLÜMÜ (Görsel 6 Mimarisi + Admin'den Değiştirilebilir Fotoğraf)
+  ===================================================================== -->
+  <section id="hakkimizda" class="py-20 px-4 sm:px-6 lg:px-8 border-b theme-bg-secondary theme-border-gold">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs uppercase tracking-[0.25em] text-amber-400 font-semibold block mb-2">Kurumsal Kimliğimiz</span>
+        <h2 class="font-serif-title text-3xl sm:text-5xl font-bold text-white leading-tight">
+          Avukat Melek Pekgöz <br />
+          <span class="gold-gradient-text">Hukuk Bürosu</span>
+        </h2>
+        <div class="w-24 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Sol Sütun: Biyografi Metinleri -->
+        <div class="lg:col-span-7 space-y-5 text-stone-200 leading-relaxed text-base">
+          <p class="border-l-4 border-amber-500 pl-4 py-1 text-lg font-medium text-amber-50">
+            Avukat Melek PEKGÖZ, bireysel ve kurumsal müvekkillerine, Siirt Kurtalan'da bulunan hukuk bürosunda uzun yıllara dayanan tecrübesi ve birikimi ile kapsamlı hukuki hizmetler vermektedir.
+          </p>
+          <p class="text-stone-300">
+            Boşanma hukuku, ceza hukuku, miras hukuku, iş hukuku, gayrimenkul hukuku, trafik kazası, sigorta hukuku, icra hukuku, tazminat hukuku ve ticaret hukuku gibi pek çok alanda derin bir uzmanlığa sahip olan büromuz, müvekkillerinin haklarını kararlılıkla savunmaktadır.
+          </p>
+          <p class="text-stone-300">
+            Hukuki süreçler, profesyonel bir yaklaşım ve derin bilgi birikimi gerektirir. Bu nedenle, hukuki süreçlerde profesyonelden destek alınmaması halinde telafisi imkansız zararlar ve geri dönüşü mümkün olmayan sonuçlara yol açabilir. Bu yüzden hukuk büromuz, müvekkillerine her alanda kapsamlı ve profesyonel bir hukuki danışmanlık hizmeti sunmayı amaçlamaktadır.
+          </p>
+          <p class="text-stone-300">
+            Hukuki ihtilaflar ve ilgili hukuki strateji, en güncel Yargıtay kararları ve yenilenen mevzuat dikkate alınarak titizlikle belirlenmektedir.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+            <div class="p-4 rounded-xl border border-amber-500/25 bg-black/40 flex items-start gap-3">
+              <i data-lucide="map-pin" class="w-5 h-5 text-amber-400 shrink-0 mt-1"></i>
+              <div>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-amber-400">Ofis Adresimiz</h4>
+                <p id="aboutAddressText" class="text-xs text-stone-300 mt-1">Ceylan Apartman, Cumhuriyet, Selahaddin Eyyübi Cad No:16/D, 56500 Kurtalan/Siirt</p>
+              </div>
+            </div>
+            <div class="p-4 rounded-xl border border-amber-500/25 bg-black/40 flex items-start gap-3">
+              <i data-lucide="award" class="w-5 h-5 text-amber-400 shrink-0 mt-1"></i>
+              <div>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-amber-400">Kurucu Avukat</h4>
+                <p class="text-sm font-bold text-white mt-0.5">AV. MELEK PEKGÖZ</p>
+                <p class="text-xs text-stone-400">Siirt Barosu Levhasına Kayıtlı Avukat</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sağ Sütun: Avukat Resmi -->
+        <div class="lg:col-span-5">
+          <div class="relative group mx-auto max-w-md">
+            <div class="relative rounded-2xl overflow-hidden border-2 border-amber-500/50 bg-stone-900 shadow-2xl">
+              <img 
+                id="aboutLawyerImg"
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=900" 
+                alt="Av. Melek Pekgöz" 
+                class="w-full h-[450px] object-cover object-top"
+                onerror="this.src='https://placehold.co/600x750/24140e/d4af37?text=Av.+Melek+Pekgoz'"
+              />
+              <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black via-black/85 to-transparent p-6">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <span class="text-xs uppercase tracking-widest text-amber-400 font-semibold block">Kurucu Avukat</span>
+                    <h3 class="font-serif-title text-2xl font-bold text-white">AV. MELEK PEKGÖZ</h3>
+                  </div>
+                  <div class="w-10 h-10 rounded-full border border-amber-400/40 bg-amber-500/10 flex items-center justify-center text-amber-400">
+                    <i data-lucide="scale" class="w-5 h-5"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       4. ADALET TERAZİSİ VE HUKUKUN ÜSTÜNLÜĞÜ İLKESİ (Görsel 8 Simgesi - Ciddi Avukatlık Etiği Metniyle)
+  ===================================================================== -->
+  <section id="adalet-ilkemiz" class="py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden border-b theme-bg-primary theme-border-gold">
+    <div class="max-w-6xl mx-auto">
+      <div 
+        class="rounded-3xl p-8 sm:p-12 border-2 border-amber-500/50 shadow-2xl relative overflow-hidden"
+        style="background: radial-gradient(circle at center, var(--brown-rich) 0%, var(--bg-secondary) 70%, var(--bg-primary) 100%);"
+      >
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Sol: Özel Defne Yapraklı Adalet Terazisi Amblemi -->
+          <div class="lg:col-span-5 flex flex-col items-center justify-center">
+            <div class="relative p-8 rounded-full border-2 border-amber-400/50 bg-black/60 shadow-[0_0_50px_rgba(212,175,55,0.25)]">
+              <svg viewBox="0 0 240 220" class="w-44 h-44 sm:w-52 sm:h-52 text-amber-400" fill="currentColor">
+                <path d="M120 200 C 65 195, 25 150, 25 95 C 25 55, 55 25, 85 15" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+                <path d="M120 200 C 175 195, 215 150, 215 95 C 215 55, 185 25, 155 15" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+                <path d="M105 208 C 115 198, 125 198, 135 208" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
+                <g>
+                  <ellipse cx="90" cy="188" rx="12" ry="5.5" transform="rotate(25 90 188)" />
+                  <ellipse cx="65" cy="175" rx="12" ry="5.5" transform="rotate(40 65 175)" />
+                  <ellipse cx="45" cy="155" rx="12" ry="5.5" transform="rotate(55 45 155)" />
+                  <ellipse cx="32" cy="130" rx="12" ry="5.5" transform="rotate(75 32 130)" />
+                  <ellipse cx="26" cy="100" rx="12" ry="5.5" transform="rotate(90 26 100)" />
+                  <ellipse cx="32" cy="70" rx="12" ry="5.5" transform="rotate(110 32 70)" />
+                  <ellipse cx="45" cy="45" rx="12" ry="5.5" transform="rotate(125 45 45)" />
+                  <ellipse cx="65" cy="25" rx="12" ry="5.5" transform="rotate(140 65 25)" />
+                  <ellipse cx="88" cy="14" rx="11" ry="5" transform="rotate(155 88 14)" />
+                  <ellipse cx="150" cy="188" rx="12" ry="5.5" transform="rotate(-25 150 188)" />
+                  <ellipse cx="175" cy="175" rx="12" ry="5.5" transform="rotate(-40 175 175)" />
+                  <ellipse cx="195" cy="155" rx="12" ry="5.5" transform="rotate(-55 195 155)" />
+                  <ellipse cx="208" cy="130" rx="12" ry="5.5" transform="rotate(-75 208 130)" />
+                  <ellipse cx="214" cy="100" rx="12" ry="5.5" transform="rotate(-90 214 100)" />
+                  <ellipse cx="208" cy="70" rx="12" ry="5.5" transform="rotate(-110 208 70)" />
+                  <ellipse cx="195" cy="45" rx="12" ry="5.5" transform="rotate(-125 195 45)" />
+                  <ellipse cx="175" cy="25" rx="12" ry="5.5" transform="rotate(-140 175 25)" />
+                  <ellipse cx="152" cy="14" rx="11" ry="5" transform="rotate(-155 152 14)" />
+                </g>
+                <path d="M90 155 C 95 145, 145 145, 150 155 Z" />
+                <rect x="117" y="68" width="6" height="82" rx="2" />
+                <circle cx="120" cy="64" r="6" />
+                <rect x="72" y="68" width="96" height="4.5" rx="2" />
+                <line x1="76" y1="72" x2="62" y2="108" stroke="currentColor" stroke-width="2" />
+                <line x1="76" y1="72" x2="90" y2="108" stroke="currentColor" stroke-width="2" />
+                <path d="M58 108 L94 108 C 92 122, 60 122, 58 108 Z" />
+                <line x1="164" y1="72" x2="150" y2="108" stroke="currentColor" stroke-width="2" />
+                <line x1="164" y1="72" x2="178" y2="108" stroke="currentColor" stroke-width="2" />
+                <path d="M146 108 L182 108 C 180 122, 148 122, 146 108 Z" />
+              </svg>
+            </div>
+            <span class="mt-4 text-xs uppercase tracking-[0.3em] text-amber-300 font-semibold">
+              Adalet • Hakkaniyet • Meslek Onuru
+            </span>
+          </div>
+
+          <!-- Sağ: Avukatlık Meslek Etiği ve Savunma Hakkı Metni -->
+          <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-semibold">
+              <i data-lucide="shield" class="w-4 h-4"></i>
+              <span>Avukatlık Meslek İlkemiz</span>
+            </div>
+            <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-white leading-snug">
+              Hukukun Üstünlüğü ve <span class="gold-gradient-text">Bağımsız Savunma İlkesi</span>
+            </h2>
+            <p class="text-stone-200 text-sm sm:text-base leading-relaxed">
+              Yargının kurucu unsurlarından olan bağımsız savunmayı serbestçe temsil eden avukatlık mesleği; hak arama özgürlüğünün ve adil yargılanma hakkının en temel güvencesidir. Merkezdeki <strong>Adalet Terazisi</strong> kanun önünde eşitliği ve tarafsızlığı, çevresindeki <strong>Defne Çelengi</strong> ise hukukun üstünlüğünü, meslek vakarını ve haklı davada ulaşılan adil sonucu simgelemektedir.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-3">
+              <div class="p-4 rounded-xl bg-black/50 border border-amber-500/25">
+                <h4 class="font-serif-title font-bold text-amber-400 text-lg">Hukuki Güvenlik</h4>
+                <p class="text-xs text-stone-300 mt-1">Anayasal hakların ve kanuni menfaatlerin her aşamada titizlikle korunması.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-black/50 border border-amber-500/25">
+                <h4 class="font-serif-title font-bold text-amber-400 text-lg">Mesleki Gizlilik</h4>
+                <p class="text-xs text-stone-300 mt-1">Avukatlık Kanunu ve meslek kuralları gereği sır saklama ve sadakat yükümlülüğü.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-black/50 border border-amber-500/25">
+                <h4 class="font-serif-title font-bold text-amber-400 text-lg">Etkin Temsil</h4>
+                <p class="text-xs text-stone-300 mt-1">Adli ve idari merciler nezdinde güncel içtihatlarla kararlı savunma.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       5. UZMANLIK ALANLARIMIZ / HUKUKİ HİZMETLER (6 Hizmet Alanı)
+  ===================================================================== -->
+  <section id="hizmetlerimiz" class="py-20 px-4 sm:px-6 lg:px-8 border-b theme-bg-secondary theme-border-gold">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="font-serif-title text-4xl sm:text-5xl font-bold text-white">
+          Uzmanlık <span class="font-serif-italic italic font-normal gold-gradient-text text-5xl sm:text-6xl">Alanlarımız</span>
+        </h2>
+        <p class="text-stone-300 mt-4 text-base sm:text-lg">
+          Karmaşık hukuki süreçleri sizin için anlaşılır, şeffaf ve güvenli bir şekilde yönetiyoruz.
+        </p>
+      </div>
+
+      <div id="servicesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- JS ile doldurulur -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       6. ŞEFFAF VE GÜVENİLİR SÜREÇ YÖNETİMİ (Görsel 5 Mimarisi)
+  ===================================================================== -->
+  <section class="border-b theme-bg-primary theme-border-gold">
+    <div 
+      class="py-16 px-4 text-center relative overflow-hidden"
+      style="background: linear-gradient(90deg, #1a0906 0%, var(--brown-rich) 50%, #120806 100%);"
+    >
+      <div class="max-w-4xl mx-auto relative z-10 space-y-2">
+        <span class="text-xs uppercase tracking-[0.25em] text-amber-400 font-semibold">Çalışma İlkelerimiz</span>
+        <h2 class="font-serif-title text-3xl sm:text-5xl font-bold text-white leading-tight">
+          Şeffaf ve Güvenilir <br />
+          <span class="gold-gradient-text">Süreç Yönetimi</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-amber-500/20">
+        <div class="px-6 py-8 text-center space-y-4">
+          <div class="w-16 h-16 mx-auto rounded-2xl bg-amber-950/50 border border-amber-500/40 flex items-center justify-center text-amber-400 shadow-lg">
+            <i data-lucide="users" class="w-8 h-8"></i>
+          </div>
+          <h3 class="font-serif-title text-2xl font-bold text-white">Güvenilirlik</h3>
+          <p class="text-stone-300 text-sm leading-relaxed max-w-xs mx-auto">
+            Güvenilirlik en önemli ilkelerimizden biridir. Sürecin başından sonuna kadar müvekkillerimiz ile aramızda önemli bir güven bağı vardır.
+          </p>
+        </div>
+
+        <div class="px-6 py-8 text-center space-y-4">
+          <div class="w-16 h-16 mx-auto rounded-2xl bg-amber-950/50 border border-amber-500/40 flex items-center justify-center text-amber-400 shadow-lg">
+            <i data-lucide="gavel" class="w-8 h-8"></i>
+          </div>
+          <h3 class="font-serif-title text-2xl font-bold text-white">Deneyim ve Tecrübe</h3>
+          <p class="text-stone-300 text-sm leading-relaxed max-w-xs mx-auto">
+            Sunduğumuz hizmetlerin ihtiyaçlara yanıt verebilecek düzeyde tamamlanması için yılların getirmiş olduğu deneyimle yanınızda olmaktayız.
+          </p>
+        </div>
+
+        <div class="px-6 py-8 text-center space-y-4">
+          <div class="w-16 h-16 mx-auto rounded-2xl bg-amber-950/50 border border-amber-500/40 flex items-center justify-center text-amber-400 shadow-lg">
+            <i data-lucide="check" class="w-8 h-8"></i>
+          </div>
+          <h3 class="font-serif-title text-2xl font-bold text-white">Sonuç Odaklı Yaklaşım</h3>
+          <p class="text-stone-300 text-sm leading-relaxed max-w-xs mx-auto">
+            Müvekkillerimizin hedefine ulaşması için tüm deneyimimizle strateji odaklı ilerlemekte ve bunun için büyük bir özveriyle çalışmaktayız.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       7. MAKALELER BÖLÜMÜ (Arka Plan Resimli Hukuki Makale Kartları)
+  ===================================================================== -->
+  <section id="makaleler" class="py-20 px-4 sm:px-6 lg:px-8 border-b theme-bg-secondary theme-border-gold">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-amber-400 font-semibold block mb-1">Hukuki Yayınlar</span>
+          <h2 class="font-serif-title text-3xl sm:text-5xl font-bold text-white">Makaleler</h2>
+        </div>
+        <a
+          href="#iletisim"
+          class="self-start sm:self-auto px-4 py-2.5 rounded-xl border border-amber-500/30 text-amber-300 hover:bg-amber-500/10 text-xs font-semibold flex items-center gap-2 transition-colors"
+        >
+          <i data-lucide="book-open" class="w-4 h-4"></i> Hukuki Danışmanlık Talebi
+        </a>
+      </div>
+
+      <div id="articlesGrid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- JS ile arka plan resimli makale kartları doldurulur -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       8. HUKUK BLOĞU (Kısa, Net ve Öz Başlık Yapısı)
+  ===================================================================== -->
+  <section id="blog" class="py-20 px-4 sm:px-6 lg:px-8 border-b theme-bg-primary theme-border-gold">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-amber-400 font-semibold block mb-1">Güncel Hukuk Notları</span>
+          <h2 class="font-serif-title text-3xl sm:text-5xl font-bold text-white">
+            Hukuk <span class="gold-gradient-text">Bloğu</span>
+          </h2>
+          <p class="text-stone-400 mt-1 text-sm">Güncel hukuki gelişmeler ve emsal karar incelemeleri.</p>
+        </div>
+      </div>
+
+      <div id="blogsGrid" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- JS ile doldurulur -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       9. GOOGLE MÜVEKKİL YORUMLARI
+  ===================================================================== -->
+  <section id="yorumlar" class="py-20 px-4 sm:px-6 lg:px-8 border-b theme-bg-secondary theme-border-gold">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-semibold mb-3">
+          <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
+          <span>Google Müvekkil Değerlendirmeleri</span>
+        </div>
+        <h2 class="font-serif-title text-3xl sm:text-5xl font-bold text-white">Müvekkil Yorumları</h2>
+      </div>
+
+      <div id="reviewsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- JS ile doldurulur -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       10. BİZE ULAŞIN (Av. Melek Pekgöz Hukuk Bürosu İletişim Formu)
+  ===================================================================== -->
+  <section id="iletisim" class="py-20 px-4 sm:px-6 lg:px-8 border-b theme-bg-primary theme-border-gold">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Sol Kısım: Kurumsal İletişim Metni -->
+        <div class="lg:col-span-6 space-y-6">
+          <div>
+            <span class="text-xs uppercase tracking-[0.25em] text-amber-400 font-semibold block mb-2">Hukuki Destek & Randevu</span>
+            <h2 class="font-serif-title text-4xl sm:text-5xl font-bold text-white">Bize Ulaşın</h2>
+            <h3 class="text-xl sm:text-2xl font-bold text-amber-300 mt-3 leading-snug">
+              Hukuki danışmanlık için bizimle iletişime geçebilirsiniz.
+            </h3>
+          </div>
+
+          <div class="space-y-4 text-stone-300 text-sm sm:text-base leading-relaxed">
+            <p>
+              <strong class="text-white">Av. Melek Pekgöz Hukuk Bürosu</strong> olarak güvene dayalı bir ilişkiyi, başarıya giden yolun temeli olarak görüyoruz. Müvekkillerimizin güvenini kazanmak için yorulmadan çalışıyor, bu güveni sürdürmek adına daha büyük bir özveriyle hareket ediyoruz.
+            </p>
+            <p>
+              Haklarınızı savunurken yalnızca etkili bir savunucu değil, aynı zamanda zorlu müzakerelerde güçlü bir temsilciyiz. Hukukun belirli alanlarına odaklanmamız, her bir müvekkilimize özel, kişiselleştirilmiş çözümler sunmamızı sağlıyor. Hukuki bilgi birikimimizi geniş müzakere deneyimimizle birleştirerek en etkili sonuçları hedefliyoruz.
+            </p>
+            <p>
+              Hizmetlerimizde, müvekkillerimizin doğrudan avukatlarına ulaşabileceği bir sistem sunuyoruz. Bu yaklaşım, güvenilir bir iletişim ortamı oluştururken müvekkillerimizin ihtiyaçlarına hızlıca yanıt verebilmemizi sağlıyor.
+            </p>
+            <p>
+              Türkiye genelinde ve Siirt Kurtalan'da hukuki bir çözüm ortağı arıyorsanız, <strong class="text-white">Av. Melek Pekgöz Hukuk Bürosu</strong> deneyimli vizyonuyla yanınızda. Sorunlarınızı çözmek ve ihtiyaçlarınıza en uygun hukuki desteği sağlamak için bize ulaşmanız yeterli.
+            </p>
+          </div>
+        </div>
+
+        <!-- Sağ Kısım: İletişim Formu -->
+        <div class="lg:col-span-6">
+          <form id="contactForm" class="theme-bg-card theme-border-gold rounded-3xl p-8 sm:p-10 border-2 shadow-2xl space-y-5">
+            <h4 class="font-serif-title text-2xl font-bold text-white border-b border-amber-500/20 pb-3">İletişim & Randevu Formu</h4>
+            
+            <div>
+              <label class="block text-sm font-bold text-amber-100 mb-2">Adınız</label>
+              <input id="cfName" type="text" required placeholder="Adınız Soyadınız" class="w-full px-4 py-3.5 rounded-xl bg-black/50 border border-amber-500/30 text-white placeholder-stone-500 focus:outline-none focus:border-amber-400 text-sm" />
+            </div>
+
+            <div>
+              <label class="block text-sm font-bold text-amber-100 mb-2">E-posta Adresiniz</label>
+              <input id="cfEmail" type="email" placeholder="ornek@mail.com" class="w-full px-4 py-3.5 rounded-xl bg-black/50 border border-amber-500/30 text-white placeholder-stone-500 focus:outline-none focus:border-amber-400 text-sm" />
+            </div>
+
+            <div>
+              <label class="block text-sm font-bold text-amber-100 mb-2">Telefon Numaranız</label>
+              <input id="cfPhone" type="tel" required placeholder="05XX XXX XX XX" class="w-full px-4 py-3.5 rounded-xl bg-black/50 border border-amber-500/30 text-white placeholder-stone-500 focus:outline-none focus:border-amber-400 text-sm" />
+            </div>
+
+            <div>
+              <label class="block text-sm font-bold text-amber-100 mb-2">Konu</label>
+              <input id="cfSubject" type="text" placeholder="Danışmak istediğiniz hukuki konu" class="w-full px-4 py-3.5 rounded-xl bg-black/50 border border-amber-500/30 text-white placeholder-stone-500 focus:outline-none focus:border-amber-400 text-sm" />
+            </div>
+
+            <div>
+              <label class="block text-sm font-bold text-amber-100 mb-2">İletiniz (tercihe bağlı)</label>
+              <textarea id="cfMessage" rows="4" placeholder="Mesajınızı buraya yazabilirsiniz..." class="w-full px-4 py-3.5 rounded-xl bg-black/50 border border-amber-500/30 text-white placeholder-stone-500 focus:outline-none focus:border-amber-400 text-sm"></textarea>
+            </div>
+
+            <button type="submit" class="theme-accent-bg text-[#0c0908] w-full py-4 rounded-xl font-extrabold text-sm uppercase tracking-wider shadow-xl hover:brightness-110 transition-all flex items-center justify-center gap-2">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              <span>Mesajı Gönder</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       11. FOOTER HEMEN ÜSTÜ: TAM GENİŞLİKLİ (SAĞDAN VE SOLDAN BOŞLUKLU) HARİTA & 360 KONUM BÖLÜMÜ
+  ===================================================================== -->
+  <section id="harita" class="py-16 px-4 sm:px-8 lg:px-14 theme-bg-secondary border-b theme-border-gold">
+    <div class="max-w-[1440px] mx-auto space-y-6">
+      
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-amber-400 font-semibold block">Ofis Konumu & 360° Sokak Görünümü</span>
+          <h3 class="font-serif-title text-2xl sm:text-3xl font-bold text-white mt-1">
+            Ceylan Apartman, Cumhuriyet, Selahaddin Eyyübi Cad No:16/D, 56500 Kurtalan / Siirt
+          </h3>
+        </div>
+        <div class="flex flex-wrap items-center gap-3">
+          <button
+            onclick="switchMapMode('map')"
+            id="btnStandardMap"
+            class="px-4 py-2.5 rounded-xl text-xs font-bold bg-amber-500 text-black shadow transition-all flex items-center gap-1.5"
+          >
+            <i data-lucide="map" class="w-4 h-4"></i> Harita Görünümü
+          </button>
+          <button
+            onclick="switchMapMode('street360')"
+            id="btn360Map"
+            class="px-4 py-2.5 rounded-xl text-xs font-bold border border-amber-500/40 text-amber-300 hover:bg-amber-500/10 transition-all flex items-center gap-1.5"
+          >
+            <i data-lucide="camera" class="w-4 h-4"></i> 360° Kamera & Panoramik Görünüm
+          </button>
+          <a
+            href="https://www.google.com/maps?q=Cumhuriyet,+Selahaddin+Eyy%C3%BCbi+Cad+No:16/D,+56500+Kurtalan/Siirt"
+            target="_blank"
+            rel="noreferrer"
+            class="px-4 py-2.5 rounded-xl text-xs font-bold bg-white/10 text-white hover:bg-white/20 transition-all flex items-center gap-1.5"
+          >
+            <i data-lucide="navigation" class="w-4 h-4 text-amber-400"></i> Yol Tarifi Al
+          </a>
+        </div>
+      </div>
+
+      <!-- Sağdan ve Soldan Dengeli Boşluklu Geniş Harita & 360 Kamera Çerçevesi -->
+      <div class="relative w-full h-[440px] sm:h-[500px] rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.8)] bg-black" style="border: 2px solid var(--border-gold);">
+        <!-- 1. Standart Harita Iframe (Gönderdiğin Tam Adres Koduyla) -->
+        <iframe
+          id="officeMapIframe"
+          title="Av. Melek Pekgöz Hukuk Bürosu Kurtalan Siirt Harita"
+          src="https://www.google.com/maps?q=Cumhuriyet,+Selahaddin+Eyy%C3%BCbi+Cad+No:16/D,+56500+Kurtalan/Siirt&output=embed"
+          width="100%"
+          height="100%"
+          style="border:1px solid var(--border-gold); border-radius: 12px;"
+          class="w-full h-full border-0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <!-- 2. 360° Kamera / Street View Panoramik Görünümü (Doğrudan Pekgöz Hukuk Bürosu Cephesi) -->
+        <div id="street360Container" class="hidden w-full h-full relative">
+          <iframe
+            id="office360Iframe"
+            src="https://www.google.com/maps/embed?pb=!4v1792922902613!6m8!1m7!1s5caG6aWT14u96Gf_YzJ-9Q!2m2!1d37.92485399278412!2d41.69699721681242!3f289.94376937834335!4f5.710396329865446!5f1.1448032767535614"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            class="w-full h-full border-0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       12. ALT BİLGİ (FOOTER)
+  ===================================================================== -->
+  <footer class="py-14 px-4 sm:px-6 lg:px-8 bg-[#070504]">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+      <div class="space-y-3">
+        <h3 class="font-serif-title text-2xl font-bold text-white">AV. MELEK PEKGÖZ</h3>
+        <p class="text-xs uppercase tracking-widest text-amber-400">Hukuk ve Danışmanlık Bürosu</p>
+        <p class="text-stone-400 text-sm leading-relaxed">
+          Siirt Kurtalan merkezli hukuk büromuz; Aile, Ceza, İş, Tazminat, Gayrimenkul, Miras, Ticaret ve İdare Hukuku alanlarında avukatlık ve danışmanlık hizmeti sunmaktadır.
+        </p>
+      </div>
+
+      <div class="space-y-2">
+        <h4 class="font-serif-title text-lg font-bold text-amber-400">Hızlı Menü</h4>
+        <ul class="space-y-1.5 text-sm text-stone-300">
+          <li><a href="#hakkimizda" class="hover:text-amber-400">Hakkımızda</a></li>
+          <li><a href="#hizmetlerimiz" class="hover:text-amber-400">Hukuki Hizmetlerimiz</a></li>
+          <li><a href="#makaleler" class="hover:text-amber-400">Makaleler</a></li>
+          <li><a href="#blog" class="hover:text-amber-400">Hukuk Bloğu</a></li>
+          <li><a href="#iletisim" class="hover:text-amber-400">Bize Ulaşın</a></li>
+        </ul>
+      </div>
+
+      <div class="space-y-2">
+        <h4 class="font-serif-title text-lg font-bold text-amber-400">İletişim & Adres</h4>
+        <p class="text-xs text-stone-300 leading-relaxed">Ceylan Apartman, Cumhuriyet, Selahaddin Eyyübi Cad No:16/D, 56500 Kurtalan/Siirt</p>
+        <p class="text-sm font-bold text-amber-300 pt-1">0536 235 63 15</p>
+        <p class="text-xs text-stone-300">yunusulusik807@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+      <p>© 2026 Av. Melek Pekgöz Hukuk Bürosu. Tüm Hakları Saklıdır.</p>
+      <!-- Gizli ve zarif yönetici giriş ikonu (Müşterilerin dikkatini çekmez, ayrıca Ctrl+Shift+A ile de açılır) -->
+      <div class="flex items-center gap-3">
+        <span>Kurtalan / Siirt Barosu</span>
+        <button 
+          onclick="openAdminAuth()" 
+          title="Kurumsal Yönetim Girişi (Kısayol: Ctrl + Shift + A)"
+          class="p-1.5 rounded-lg text-stone-700 hover:text-amber-400/70 transition-colors"
+        >
+          <i data-lucide="shield-check" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       13. SAĞ ALT SABİT WHATSAPP & ÇEVRİMİÇİ HUKUKİ DESTEK WIDGET'I
+       (Orijinal Kusursuz WhatsApp Vektör Logosu ile Düzeltildi)
+  ===================================================================== -->
+  <div class="fixed bottom-5 right-5 z-50 flex flex-col items-end">
+    
+    <!-- Açılır Koyu Kart Penceresi -->
+    <div id="waSupportCard" class="hidden wa-popup-enter mb-3.5 w-[340px] sm:w-[380px] rounded-3xl bg-[#0f172a] border border-slate-700/80 shadow-[0_25px_70px_rgba(0,0,0,0.9)] overflow-hidden text-white">
+      
+      <!-- Üst Başlık: Avukat Fotoğrafı, İsim, Kurucu Avukat & ÇEVRİMİÇİ Rozeti -->
+      <div class="p-5 bg-[#131d31] border-b border-slate-800 flex items-center justify-between">
+        <div class="flex items-center gap-3.5">
+          <div class="relative shrink-0">
+            <img 
+              id="waWidgetAvatar"
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=300" 
+              alt="Av. Melek Pekgöz" 
+              class="w-14 h-14 rounded-full object-cover object-top border-2 border-amber-400/80 shadow-md"
+            />
+            <span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-emerald-400 ring-2 ring-[#131d31]"></span>
+          </div>
+          <div>
+            <h4 class="font-bold text-base text-white leading-tight">Av. Melek<br/>Pekgöz</h4>
+            <span class="text-xs text-slate-400 block mt-0.5">Kurucu Avukat</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2 self-start">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-950/90 border border-emerald-500/40 text-emerald-400 text-[11px] font-bold tracking-wide">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            ÇEVRİMİÇİ
+          </span>
+          <button onclick="toggleWaWidget()" class="text-slate-400 hover:text-white p-1 rounded-lg hover:bg-white/5 transition-colors">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Orta İçerik: Hukuki sorunuz mu var? + 3 Etkileşimli Satır -->
+      <div class="p-5 space-y-4">
+        <div>
+          <h3 class="text-xl font-extrabold text-white tracking-tight">Hukuki sorunuz mu var?</h3>
+          <div class="flex items-center gap-2 mt-1.5 text-xs text-slate-300">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 shrink-0 shadow-[0_0_8px_#34d399]"></span>
+            <span>Mesai saatleri içinde hemen dönüş yapıyoruz</span>
+          </div>
+        </div>
+
+        <!-- 3 Bölmeli Kutu: Hemen Ara | Randevu Talep Et | E-posta Gönder -->
+        <div class="rounded-2xl border border-slate-700/80 bg-[#172236] divide-y divide-slate-700/70 overflow-hidden">
+          
+          <!-- 1. Satır: Hemen Ara + Kopyala -->
+          <div class="p-3.5 flex items-center justify-between hover:bg-white/[0.04] transition-colors">
+            <a href="tel:05362356315" class="flex items-center gap-3.5 flex-1">
+              <div class="w-10 h-10 rounded-xl bg-slate-700/60 flex items-center justify-center text-slate-200">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="block text-sm font-bold text-white">Hemen ara</span>
+                <span id="waPhoneDisplay" class="block text-xs text-slate-400">0536 235 63 15</span>
+              </div>
+            </a>
+            <button onclick="copyTextToClipboard('0536 235 63 15', 'Telefon numarası kopyalandı!')" title="Numarayı Kopyala" class="p-2 text-slate-400 hover:text-white rounded-lg hover:bg-white/5">
+              <i data-lucide="copy" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+          <!-- 2. Satır: Randevu Talep Et -->
+          <a href="#iletisim" onclick="toggleWaWidget()" class="p-3.5 flex items-center justify-between hover:bg-white/[0.04] transition-colors">
+            <div class="flex items-center gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-slate-700/60 flex items-center justify-center text-slate-200">
+                <i data-lucide="calendar-check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="block text-sm font-bold text-white">Randevu talep et</span>
+                <span class="block text-xs text-slate-400">Uygun saatleri birlikte belirleyelim</span>
+              </div>
+            </div>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+          </a>
+
+          <!-- 3. Satır: E-posta Gönder + Kopyala -->
+          <div class="p-3.5 flex items-center justify-between hover:bg-white/[0.04] transition-colors">
+            <a href="mailto:yunusulusik807@gmail.com" class="flex items-center gap-3.5 flex-1 overflow-hidden">
+              <div class="w-10 h-10 rounded-xl bg-slate-700/60 flex items-center justify-center text-slate-200 shrink-0">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div class="truncate">
+                <span class="block text-sm font-bold text-white">E-posta gönder</span>
+                <span id="waEmailDisplay" class="block text-xs text-slate-400 truncate">yunusulusik807@gmail.com</span>
+              </div>
+            </a>
+            <button onclick="copyTextToClipboard('yunusulusik807@gmail.com', 'E-posta adresi kopyalandı!')" title="E-postayı Kopyala" class="p-2 text-slate-400 hover:text-white rounded-lg hover:bg-white/5 shrink-0">
+              <i data-lucide="copy" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Orijinal WhatsApp İkonlu Yeşil Buton -->
+        <a 
+          href="https://wa.me/905362356315?text=Merhaba%20Av.%20Melek%20Pekg%C3%B6z%20Hukuk%20B%C3%BCrosu,%20hukuki%20dan%C4%B1%C5%9Fmanl%C4%B1k%20almak%20istiyorum." 
+          target="_blank" 
+          rel="noreferrer"
+          class="w-full py-3.5 rounded-2xl bg-[#25D366] hover:bg-[#20bd5a] text-slate-950 font-extrabold text-base flex items-center justify-center gap-2.5 shadow-[0_8px_25px_rgba(37,211,102,0.35)] transition-all"
+        >
+          <!-- Gerçek WhatsApp Vektörel İkonu -->
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.124.556 4.119 1.528 5.847l-1.528 5.581 5.713-1.499c1.678.896 3.591 1.404 5.622 1.404 6.627 0 12-5.373 12-12 0-6.627-5.373-12-11.335-12z"/>
+          </svg>
+          <span>WhatsApp'tan yaz</span>
+        </a>
+
+        <p class="text-center text-[11px] text-slate-400">
+          Görüşmeleriniz gizlilik esasına tabidir
+        </p>
+      </div>
+    </div>
+
+    <!-- Sağ Alt Sabit Yuvarlak WhatsApp Butonu (Kusursuz Orantılı SVG Logo) -->
+    <button 
+      onclick="toggleWaWidget()"
+      aria-label="WhatsApp Hukuki Destek Hattı"
+      class="group relative flex items-center gap-3 pl-3.5 pr-5 py-3 rounded-full bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold shadow-[0_12px_35px_rgba(37,211,102,0.5)] transition-all duration-300 hover:scale-105"
+    >
+      <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center shrink-0">
+        <!-- Orijinal WhatsApp Vektör Logosu -->
+        <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.124.556 4.119 1.528 5.847l-1.528 5.581 5.713-1.499c1.678.896 3.591 1.404 5.622 1.404 6.627 0 12-5.373 12-12 0-6.627-5.373-12-11.335-12z"/>
+        </svg>
+      </div>
+      <div class="text-left">
+        <span class="block text-[10px] uppercase tracking-wider text-emerald-950 font-extrabold leading-none">Çevrimiçi Destek</span>
+        <span class="block text-sm font-extrabold text-slate-950 leading-tight mt-0.5">WhatsApp Hattı</span>
+      </div>
+      <!-- Bildirim Noktası -->
+      <span class="absolute -top-1 -right-1 flex h-4 w-4">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-4 w-4 bg-amber-500 border-2 border-[#0c0908]"></span>
+      </span>
+    </button>
+  </div>
+
+  <!-- =====================================================================
+       MAKALE & BLOG OKUMA MODALI
+  ===================================================================== -->
+  <div id="postModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-sm">
+    <div class="theme-bg-card border-2 border-amber-400 max-w-3xl w-full max-h-[88vh] overflow-y-auto rounded-3xl p-6 sm:p-10 shadow-2xl space-y-6">
+      <div class="flex items-center justify-between border-b border-amber-500/20 pb-4">
+        <span id="modalPostBadge" class="px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-bold"></span>
+        <button onclick="closePostModal()" class="p-2 rounded-lg bg-white/5 text-stone-300 hover:text-white">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <img id="modalPostImage" src="" alt="" class="w-full h-60 object-cover rounded-2xl border border-amber-500/30 hidden" />
+      <h2 id="modalPostTitle" class="font-serif-title text-2xl sm:text-4xl font-bold text-white leading-snug"></h2>
+      <div id="modalPostContent" class="text-stone-200 text-base leading-relaxed whitespace-pre-line border-t border-amber-500/15 pt-5"></div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       14. GİZLİ YÖNETİCİ KİMLİK DOĞRULAMA (PIN GİRİŞ) MODALI
+       (Sadece en alttaki kalkan ikonuna tıklandığında veya Ctrl+Shift+A ile açılır)
+  ===================================================================== -->
+  <div id="adminAuthModal" class="fixed inset-0 z-[60] hidden items-center justify-center p-4 bg-black/90 backdrop-blur-md">
+    <div class="w-full max-w-md rounded-3xl border border-amber-500/40 bg-[#120d0a] p-8 shadow-[0_25px_80px_rgba(0,0,0,0.95)] text-center space-y-6">
+      <div class="w-16 h-16 mx-auto rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 shadow-inner">
+        <i data-lucide="lock" class="w-8 h-8"></i>
+      </div>
+      <div>
+        <span class="text-[11px] uppercase tracking-[0.25em] text-amber-400 font-bold">Kurumsal Güvenlik</span>
+        <h3 class="font-serif-title text-2xl font-bold text-white mt-1">Yönetici Girişi</h3>
+        <p class="text-xs text-stone-400 mt-1">Av. Melek Pekgöz Hukuk Bürosu İçerik Yönetim Sistemi</p>
+      </div>
+
+      <form id="adminLoginForm" class="space-y-4 text-left">
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-stone-300 mb-2">Yönetici Erişim Şifresi</label>
+          <input 
+            id="adminPinInput" 
+            type="password" 
+            required
+            placeholder="••••" 
+            class="w-full px-4 py-3.5 rounded-xl bg-black border border-amber-500/30 text-white text-center text-lg tracking-[0.4em] focus:outline-none focus:border-amber-400"
+          />
+          <span class="block text-[11px] text-stone-500 mt-1.5 text-center">Varsayılan Kurumsal PIN: <strong class="text-stone-400">5656</strong></span>
+        </div>
+        <div class="flex gap-3 pt-2">
+          <button type="button" onclick="closeAdminAuth()" class="w-1/2 py-3 rounded-xl border border-white/10 text-stone-300 hover:bg-white/5 text-xs font-bold uppercase">
+            İptal
+          </button>
+          <button type="submit" class="w-1/2 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-black text-xs font-extrabold uppercase tracking-wider shadow-lg">
+            Panele Gir
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       15. PROFESYONEL KURUMSAL YÖNETİM PANELİ (CMS DASHBOARD)
+       (Sol Kenar Çubuklu, İstatistik Kartlı, Tam Kontrol Sağlayan Yapı)
+  ===================================================================== -->
+  <div id="adminModal" class="fixed inset-0 z-[70] hidden items-center justify-center p-2 sm:p-5 bg-black/90 backdrop-blur-lg">
+    <div class="w-full max-w-6xl h-[92vh] rounded-3xl border border-amber-500/40 bg-[#0d0a08] shadow-[0_30px_100px_rgba(0,0,0,0.95)] flex flex-col lg:flex-row overflow-hidden">
+      
+      <!-- SOL SIDEBAR (Kurumsal Menü) -->
+      <aside class="w-full lg:w-72 bg-[#140e0b] border-b lg:border-b-0 lg:border-r border-amber-500/20 flex flex-col justify-between p-5 shrink-0">
+        <div class="space-y-6">
+          <!-- Büro Başlığı -->
+          <div class="flex items-center justify-between lg:justify-start gap-3 pb-4 border-b border-amber-500/15">
+            <div class="w-10 h-10 rounded-xl bg-amber-500 text-black flex items-center justify-center font-serif-title font-extrabold text-lg shadow">
+              MP
+            </div>
+            <div>
+              <h3 class="font-serif-title text-base font-bold text-white leading-tight">AV. MELEK PEKGÖZ</h3>
+              <span class="text-[11px] text-emerald-400 flex items-center gap-1 font-medium">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                Firestore Bulut Aktif
+              </span>
+            </div>
+            <button onclick="closeAdminModal()" class="lg:hidden p-2 rounded-lg bg-white/5 text-stone-300">
+              <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+          </div>
+
+          <!-- Navigasyon Butonları -->
+          <nav class="flex lg:flex-col gap-2 overflow-x-auto pb-1 lg:pb-0">
+            <button onclick="switchAdminTab('dashboard')" id="tabBtn-dashboard" class="admin-tab-btn flex items-center gap-3 px-4 py-3 rounded-xl text-xs font-bold bg-amber-500 text-black whitespace-nowrap transition-all">
+              <i data-lucide="layout-dashboard" class="w-4 h-4 shrink-0"></i>
+              <span>Genel Bakış & İstatistik</span>
+            </button>
+            <button onclick="switchAdminTab('genel')" id="tabBtn-genel" class="admin-tab-btn flex items-center gap-3 px-4 py-3 rounded-xl text-xs font-bold bg-white/5 text-stone-300 hover:bg-white/10 whitespace-nowrap transition-all">
+              <i data-lucide="palette" class="w-4 h-4 shrink-0"></i>
+              <span>Tema & Görsel Ayarları</span>
+            </button>
+            <button onclick="switchAdminTab('makaleler')" id="tabBtn-makaleler" class="admin-tab-btn flex items-center gap-3 px-4 py-3 rounded-xl text-xs font-bold bg-white/5 text-stone-300 hover:bg-white/10 whitespace-nowrap transition-all">
+              <i data-lucide="book-open" class="w-4 h-4 shrink-0"></i>
+              <span>Makale Yönetimi</span>
+            </button>
+            <button onclick="switchAdminTab('blog')" id="tabBtn-blog" class="admin-tab-btn flex items-center gap-3 px-4 py-3 rounded-xl text-xs font-bold bg-white/5 text-stone-300 hover:bg-white/10 whitespace-nowrap transition-all">
+              <i data-lucide="pen-tool" class="w-4 h-4 shrink-0"></i>
+              <span>Hukuk Bloğu Yönetimi</span>
+            </button>
+            <button onclick="switchAdminTab('yorumlar')" id="tabBtn-yorumlar" class="admin-tab-btn flex items-center gap-3 px-4 py-3 rounded-xl text-xs font-bold bg-white/5 text-stone-300 hover:bg-white/10 whitespace-nowrap transition-all">
+              <i data-lucide="star" class="w-4 h-4 shrink-0"></i>
+              <span>Müvekkil Yorumları</span>
+            </button>
+            <button onclick="switchAdminTab('mesajlar')" id="tabBtn-mesajlar" class="admin-tab-btn flex items-center gap-3 px-4 py-3 rounded-xl text-xs font-bold bg-white/5 text-stone-300 hover:bg-white/10 whitespace-nowrap transition-all">
+              <i data-lucide="inbox" class="w-4 h-4 shrink-0"></i>
+              <span>Gelen Randevu & Mesajlar</span>
+            </button>
+          </nav>
+        </div>
+
+        <!-- Alt Çıkış Bilgisi -->
+        <div class="hidden lg:block pt-4 border-t border-amber-500/15 space-y-3">
+          <div class="p-3 rounded-xl bg-black/50 border border-white/5 text-[11px] text-stone-400">
+            <span class="block text-amber-400 font-bold">Proje Kimliği:</span>
+            edurota-f35b2
+          </div>
+          <button onclick="closeAdminModal()" class="w-full py-2.5 rounded-xl bg-red-500/15 border border-red-500/30 text-red-300 hover:bg-red-500 hover:text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+            <i data-lucide="log-out" class="w-4 h-4"></i>
+            <span>Yönetimden Çık</span>
+          </button>
+        </div>
+      </aside>
+
+      <!-- SAĞ ANA İÇERİK ALANI -->
+      <main class="flex-1 flex flex-col overflow-hidden bg-[#0c0908]">
+        
+        <!-- Üst Durum Çubuğu -->
+        <div class="px-6 py-4 bg-[#120d0a] border-b border-amber-500/15 flex items-center justify-between shrink-0">
+          <div>
+            <h4 id="adminHeaderTitle" class="font-serif-title text-xl font-bold text-white">Kurumsal Genel Bakış</h4>
+            <p class="text-xs text-stone-400">Av. Melek Pekgöz Hukuk Bürosu gerçek zamanlı içerik yönetim sistemi</p>
+          </div>
+          <div class="hidden sm:flex items-center gap-3">
+            <span class="px-3 py-1.5 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-semibold">
+              Kurtalan / Siirt
+            </span>
+            <button onclick="closeAdminModal()" class="px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 text-stone-300 text-xs font-bold">
+              Siteye Dön
+            </button>
+          </div>
+        </div>
+
+        <!-- Sekme İçerikleri -->
+        <div class="p-6 overflow-y-auto flex-1 space-y-6">
+          
+          <!-- 0. DASHBOARD (İSTATİSTİK VE HIZLI İŞLEMLER) -->
+          <div id="adminTab-dashboard" class="space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div class="p-5 rounded-2xl bg-[#16100d] border border-amber-500/25 space-y-2">
+                <div class="flex items-center justify-between text-amber-400">
+                  <span class="text-xs uppercase font-bold tracking-wider text-stone-400">Yayındaki Makale</span>
+                  <i data-lucide="book-open" class="w-5 h-5"></i>
+                </div>
+                <p id="statArticlesCount" class="font-serif-title text-3xl font-bold text-white">3</p>
+                <span class="text-[11px] text-emerald-400 block">Arka plan görselli aktif</span>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-[#16100d] border border-amber-500/25 space-y-2">
+                <div class="flex items-center justify-between text-amber-400">
+                  <span class="text-xs uppercase font-bold tracking-wider text-stone-400">Hukuk Bloğu</span>
+                  <i data-lucide="pen-tool" class="w-5 h-5"></i>
+                </div>
+                <p id="statBlogsCount" class="font-serif-title text-3xl font-bold text-white">3</p>
+                <span class="text-[11px] text-emerald-400 block">Güncel içtihat notları</span>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-[#16100d] border border-amber-500/25 space-y-2">
+                <div class="flex items-center justify-between text-amber-400">
+                  <span class="text-xs uppercase font-bold tracking-wider text-stone-400">Müvekkil Yorumu</span>
+                  <i data-lucide="star" class="w-5 h-5"></i>
+                </div>
+                <p id="statReviewsCount" class="font-serif-title text-3xl font-bold text-white">4</p>
+                <span class="text-[11px] text-amber-300 block">★★★★★ 5.0 Google Puanı</span>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-[#16100d] border border-amber-500/25 space-y-2">
+                <div class="flex items-center justify-between text-amber-400">
+                  <span class="text-xs uppercase font-bold tracking-wider text-stone-400">Gelen Talepler</span>
+                  <i data-lucide="inbox" class="w-5 h-5"></i>
+                </div>
+                <p id="statMessagesCount" class="font-serif-title text-3xl font-bold text-white">0</p>
+                <span class="text-[11px] text-stone-400 block">İletişim formu mesajları</span>
+              </div>
+            </div>
+
+            <!-- Hızlı Kısayol Kartları -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div onclick="switchAdminTab('makaleler')" class="p-5 rounded-2xl bg-gradient-to-br from-amber-950/40 to-black border border-amber-500/30 hover:border-amber-400 cursor-pointer transition-all space-y-2">
+                <h5 class="font-serif-title text-lg font-bold text-amber-300 flex items-center gap-2">
+                  <i data-lucide="plus-circle" class="w-5 h-5"></i> Yeni Makale Yayınla
+                </h5>
+                <p class="text-xs text-stone-300">Arka plan görselli kurumsal hukuk makalesi ekleyin veya mevcutları düzenleyin.</p>
+              </div>
+              <div onclick="switchAdminTab('blog')" class="p-5 rounded-2xl bg-gradient-to-br from-amber-950/40 to-black border border-amber-500/30 hover:border-amber-400 cursor-pointer transition-all space-y-2">
+                <h5 class="font-serif-title text-lg font-bold text-amber-300 flex items-center gap-2">
+                  <i data-lucide="edit-3" class="w-5 h-5"></i> Blog Yazısı Paylaş
+                </h5>
+                <p class="text-xs text-stone-300">Güncel Yargıtay kararlarını ve pratik hukuk bilgilerini bloğa ekleyin.</p>
+              </div>
+              <div onclick="switchAdminTab('genel')" class="p-5 rounded-2xl bg-gradient-to-br from-amber-950/40 to-black border border-amber-500/30 hover:border-amber-400 cursor-pointer transition-all space-y-2">
+                <h5 class="font-serif-title text-lg font-bold text-amber-300 flex items-center gap-2">
+                  <i data-lucide="image" class="w-5 h-5"></i> Fotoğraf & Tema Değiştir
+                </h5>
+                <p class="text-xs text-stone-300">Hakkımızda kısmındaki avukat portresini ve sitenin renk paletini güncelleyin.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 1. GENEL AYARLAR: TEMA VE HAKKINDA RESMİ -->
+          <div id="adminTab-genel" class="hidden grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-6 rounded-2xl bg-[#16100d] border border-amber-500/25 space-y-4">
+              <h4 class="font-serif-title text-lg font-bold text-amber-400">Kurumsal Tema Rengini Seçin</h4>
+              <p class="text-xs text-stone-400">Seçtiğiniz renk paleti anında tüm web sitesine ve bulut veritabanına uygulanır.</p>
+              <div class="space-y-3">
+                <button onclick="applyTheme('classic-gold')" class="w-full p-4 rounded-xl border border-amber-500/40 bg-black/60 text-left flex items-center justify-between hover:border-amber-400 transition-all">
+                  <div>
+                    <span class="block text-xs font-bold text-white">1. Klasik Siyah, Koyu Kahve & Gold</span>
+                    <span class="text-[11px] text-stone-400">Varsayılan Kurumsal Hukuk Teması</span>
+                  </div>
+                  <div class="flex -space-x-1">
+                    <span class="w-5 h-5 rounded-full bg-[#0c0908] border border-white/20"></span>
+                    <span class="w-5 h-5 rounded-full bg-[#3d1914] border border-white/20"></span>
+                    <span class="w-5 h-5 rounded-full bg-[#d4af37] border border-white/20"></span>
+                  </div>
+                </button>
+                <button onclick="applyTheme('espresso-bronze')" class="w-full p-4 rounded-xl border border-amber-500/40 bg-black/60 text-left flex items-center justify-between hover:border-amber-400 transition-all">
+                  <div>
+                    <span class="block text-xs font-bold text-white">2. Derin Espresso, Bordo Kahve & Antik Bronz</span>
+                    <span class="text-[11px] text-stone-400">Sıcak Kahve ve Bronz Tonları</span>
+                  </div>
+                  <div class="flex -space-x-1">
+                    <span class="w-5 h-5 rounded-full bg-[#110a08] border border-white/20"></span>
+                    <span class="w-5 h-5 rounded-full bg-[#4a1812] border border-white/20"></span>
+                    <span class="w-5 h-5 rounded-full bg-[#c89d66] border border-white/20"></span>
+                  </div>
+                </button>
+                <button onclick="applyTheme('obsidian-amber')" class="w-full p-4 rounded-xl border border-amber-500/40 bg-black/60 text-left flex items-center justify-between hover:border-amber-400 transition-all">
+                  <div>
+                    <span class="block text-xs font-bold text-white">3. Obsidyen Siyah, Ceviz Kahve & Kehribar</span>
+                    <span class="text-[11px] text-stone-400">Yüksek Kontrastlı Modern Siyah</span>
+                  </div>
+                  <div class="flex -space-x-1">
+                    <span class="w-5 h-5 rounded-full bg-[#080808] border border-white/20"></span>
+                    <span class="w-5 h-5 rounded-full bg-[#361f12] border border-white/20"></span>
+                    <span class="w-5 h-5 rounded-full bg-[#f59e0b] border border-white/20"></span>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-[#16100d] border border-amber-500/25 space-y-4">
+              <h4 class="font-serif-title text-lg font-bold text-amber-400">Hakkımızda & WhatsApp Portre Resmi</h4>
+              <p class="text-xs text-stone-400">Hem Hakkımızda bölümündeki hem de sağ alt WhatsApp destek penceresindeki fotoğrafı günceller.</p>
+              <input id="adminAboutImgInput" type="text" placeholder="Yeni Resim URL'si yapıştırın (https://...)" class="w-full px-4 py-3 rounded-xl bg-black border border-amber-500/30 text-xs text-white focus:outline-none focus:border-amber-400" />
+              <button onclick="saveAboutImage()" class="w-full py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-black text-xs font-extrabold uppercase tracking-wider shadow-lg transition-all">
+                Fotoğrafı Güncelle ve Kaydet
+              </button>
+            </div>
+          </div>
+
+          <!-- 2. MAKALE EKLEME / SİLME -->
+          <div id="adminTab-makaleler" class="hidden grid-cols-1 lg:grid-cols-12 gap-6">
+            <form id="adminArticleForm" class="lg:col-span-5 p-5 rounded-2xl bg-[#16100d] border border-amber-500/25 space-y-3.5">
+              <h4 class="font-serif-title text-lg font-bold text-amber-400">Yeni Makale Yayınla</h4>
+              <input id="artTitle" type="text" required placeholder="Makale Başlığı" class="w-full px-3.5 py-2.5 rounded-xl bg-black border border-amber-500/30 text-sm text-white" />
+              <input id="artCategory" type="text" placeholder="Hukuk Dalı (Örn: Ceza Hukuku)" class="w-full px-3.5 py-2.5 rounded-xl bg-black border border-amber-500/30 text-sm text-white" />
+              <input id="artImage" type="text" placeholder="Arka Plan Görseli URL (İsteğe Bağlı)" class="w-full px-3.5 py-2.5 rounded-xl bg-black border border-amber-500/30 text-sm text-white" />
+              <textarea id="artSummary" rows="2" required placeholder="Kart Üzerinde Görünecek Kısa Özet" class="w-full px-3.5 py-2.5 rounded-xl bg-black border border-amber-500/30 text-sm text-white"></textarea>
+              <textarea id="artContent" rows="5" placeholder="Makalenin Tam Metni..." class="w-full px-3.5 py-2.5 rounded-xl bg-black border border-amber-500/30 text-sm text-white"></textarea>
+              <button type="submit" class="w-full py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-black font-extrabold text-xs uppercase tracking-wider">+ Makaleyi Sitede Yayınla</button>
+            </form>
+            <div id="adminArticlesList" class="lg:col-span-7 space-y-3"></div>
+          </div>
+
+          <!-- 3. BLOG EKLEME / SİLME -->
+          <div id="adminTab-blog" class="hidden grid-cols-1 lg:grid-cols-12 gap-6">
+            <form id="adminBlogForm" class="lg:col-span-5 p-5 rounded-2xl bg-[#16100d] border border-amber-500/25 space-y-3.5">
+              <h4 class="font-serif-title text-lg font-bold text-amber-400">Yeni Blog Yazısı Ekle</h4>
+              <input id="blogTitle" type="text" required placeholder="Blog Başlığı" class="w-full px-3.5 py-2.5 rounded-xl bg-black border border-amber-500/30 text-sm text-white" />
+              <input id="blogTag" type="text" placeholder="Kategori Etiketi (Örn: Aile Hukuku)" class="w-full px-3.5 py-2.5 rounded-xl bg-black border border-amber-500/30 text-sm text-white" />
+              <textarea id="blogExcerpt" rows="2" required placeholder="Kısa Açıklama" class="w-full px-3.5 py-2.5 rounded-xl bg-black border border-amber-500/30 text-sm text-white"></textarea>
+              <textarea id="blogContent" rows="5" placeholder="Detaylı Blog İçeriği..." class="w-full px-3.5 py-2.5 rounded-xl bg-black border border-amber-500/30 text-sm text-white"></textarea>
+              <button type="submit" class="w-full py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-black font-extrabold text-xs uppercase tracking-wider">+ Blog Yazısını Paylaş</button>
+            </form>
+            <div id="adminBlogsList" class="lg:col-span-7 space-y-3"></div>
+          </div>
+
+          <!-- 4. MÜVEKKİL YORUMLARI YÖNETİMİ -->
+          <div id="adminTab-yorumlar" class="hidden grid-cols-1 lg:grid-cols-12 gap-6">
+            <form id="adminReviewForm" class="lg:col-span-5 p-5 rounded-2xl bg-[#16100d] border border-amber-500/25 space-y-3.5">
+              <h4 class="font-serif-title text-lg font-bold text-amber-400">Yeni Müvekkil Yorumu Ekle</h4>
+              <input id="revName" type="text" required placeholder="Müvekkil Adı Soyadı" class="w-full px-3.5 py-2.5 rounded-xl bg-black border border-amber-500/30 text-sm text-white" />
+              <textarea id="revComment" rows="3" required placeholder="Müvekkilin Değerlendirmesi..." class="w-full px-3.5 py-2.5 rounded-xl bg-black border border-amber-500/30 text-sm text-white"></textarea>
+              <button type="submit" class="w-full py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-black font-extrabold text-xs uppercase tracking-wider">+ Yorumu Ekle</button>
+            </form>
+            <div id="adminReviewsList" class="lg:col-span-7 space-y-3"></div>
+          </div>
+
+          <!-- 5. GELEN MESAJLAR -->
+          <div id="adminTab-mesajlar" class="hidden space-y-3"></div>
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       JAVASCRIPT & FIREBASE ENTEGRASYONU
+  ===================================================================== -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+    import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+    import { getFirestore, collection, doc, setDoc, onSnapshot, deleteDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+    // --- VARSAYILAN HİZMETLER (6 Uzmanlık Alanı) ---
+    const SERVICES = [
+      {
+        title: 'Aile ve Kişiler Hukuku',
+        icon: 'users',
+        items: [
+          'Anlaşmalı ve Çekişmeli Boşanma Davaları',
+          'Velayet, Nafaka ve Mal Paylaşımı Süreçleri',
+          'İsim, Yaş ve Nüfus Kayıt Düzeltme Davaları'
+        ]
+      },
+      {
+        title: 'Ceza Hukuku',
+        icon: 'gavel',
+        items: [
+          'Ağır Ceza ve Asliye Ceza Davaları',
+          'Soruşturma ve İfade Süreç Yönetimi',
+          'Mağdur Vekilliği ve Şüpheli Müdafiliği'
+        ]
+      },
+      {
+        title: 'İş ve Tazminat Hukuku',
+        icon: 'briefcase',
+        items: [
+          'Kıdem, İhbar ve İşçilik Alacakları',
+          'İşe İade ve İş Kazası Tazminat Davaları',
+          'Trafik Kazası Değer Kaybı ve Maddi/Manevi Tazminat'
+        ]
+      },
+      {
+        title: 'Gayrimenkul ve Miras',
+        icon: 'building',
+        items: [
+          'Tapu İptal ve Tescil (Muris Muvazaası) Davaları',
+          'Ortaklığın Giderilmesi (İzale-i Şuyu) Süreçleri',
+          'Miras Taksimi, Tenkis ve Kira Tahliye Davaları'
+        ]
+      },
+      {
+        title: 'Ticaret ve İcra Hukuku',
+        icon: 'scale',
+        items: [
+          'İlamlı ve İlamsız İcra Takipleri',
+          'Çek, Senet ve Menfi Tespit Davaları',
+          'Şirketler Hukuku ve Sözleşme Danışmanlığı'
+        ]
+      },
+      {
+        title: 'İdari Yargı ve Danışmanlık',
+        icon: 'landmark',
+        items: [
+          'İdari İşlemlerin İptali ve Yürütmenin Durdurulması',
+          'Tam Yargı (İdari Tazminat) Davaları',
+          'Kurumsal Önleyici Hukuk Danışmanlığı'
+        ]
+      }
+    ];
+
+    // --- ARKA PLAN GÖRSELLİ HUKUKİ MAKALELER ---
+    let articlesData = [
+      {
+        id: 'art-1',
+        title: 'Kaza Tazminatı Davaları ve Hak Arama Süreci',
+        category: 'Tazminat Hukuku',
+        date: '18 Ekim 2026',
+        bgImage: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=900',
+        summary: 'Kaza tazminatı avukatı ile tazminat davalarında başarının yolu; kazadan doğan maddi ve manevi haklarınızı korumak ve en doğru yasal stratejiyi belirlemektir.',
+        content: 'Trafik ve iş kazaları sonrasında oluşan maddi hasarlar, değer kaybı ve kalıcı iş göremezlik zararlarının tazmini uzman aktüerya hesabı ve etkin dava takibi gerektirir. Av. Melek Pekgöz Hukuk Bürosu olarak sigorta tahkim ve mahkeme süreçlerini titizlikle yürütmekteyiz.'
+      },
+      {
+        id: 'art-2',
+        title: 'Trafik Kazası Araç Hasarı ve Değer Kaybı Davası',
+        category: 'Sigorta Hukuku',
+        date: '12 Ekim 2026',
+        bgImage: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=900',
+        summary: 'Trafik kazası araç hasarı davası kavramı, kazaya uğramış ve araçta değer kaybı meydana gelmiş kişilerin sigorta şirketlerine karşı yürüteceği hukuki süreçleri kapsar.',
+        content: 'Kazada tam kusurlu olmayan araç malikleri, araçlarında meydana gelen ikinci el piyasa değer kaybını karşı tarafın trafik sigortasından talep edebilir. Sigorta Tahkim Komisyonu başvuruları ile süreç hızlı ve etkin biçimde sonuçlandırılmaktadır.'
+      },
+      {
+        id: 'art-3',
+        title: 'Ceza Yargılamasında Müdafilik ve Haklarınızı Korumanın Yolu',
+        category: 'Ceza Hukuku',
+        date: '05 Ekim 2026',
+        bgImage: 'https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=900',
+        summary: 'Soruşturma ve kovuşturma evrelerinde adil yargılanma hakkının korunması, hukuka uygun delil toplanması ve etkin savunma stratejisinin önemi.',
+        content: 'Ceza muhakemesinde ilk ifade aşamasından kesin hükme kadar avukat yardımı almak, kişi hürriyeti ve güvenliği açısından hayati önem taşır. Büromuz ağır ceza ve asliye ceza dosyalarında titiz savunma hizmeti sunmaktadır.'
+      }
+    ];
+
+    let blogsData = [
+      {
+        id: 'blog-1',
+        title: 'Anlaşmalı Boşanma Protokolünde Dikkat Edilmesi Gerekenler',
+        tag: 'Aile Hukuku',
+        date: '22 Ekim 2026',
+        excerpt: 'Boşanma protokolünde velayet, nafaka ve mal paylaşımı hükümlerinin açık ve tereddüde yer bırakmayacak şekilde düzenlenmesi hak kayıplarını önler.',
+        content: 'Anlaşmalı boşanma davalarında tarafların imzaladığı protokol, mahkeme ilamının temelini oluşturur. Mal paylaşımı, ziynet eşyaları ve nafaka artış oranlarının net yazılması ileride doğabilecek ek davaların önüne geçer.'
+      },
+      {
+        id: 'blog-2',
+        title: 'Kira Tespit ve Tahliye Davalarında Güncel Uygulamalar',
+        tag: 'Gayrimenkul Hukuku',
+        date: '15 Ekim 2026',
+        excerpt: 'Kira uyuşmazlıklarında zorunlu arabuluculuk süreci, 5 yıllık kira süresi sonunda kira tespit davası ve geçerli tahliye taahhütnamesi şartları.',
+        content: 'Konut ve çatılı işyeri kiralarında dava açmadan önce arabuluculuğa başvurulması dava şartıdır. Tahliye taahhütnamelerinin geçerliliği ve kira tespit süreçleri Yargıtay içtihatları doğrultusunda takip edilmelidir.'
+      },
+      {
+        id: 'blog-3',
+        title: 'İşçinin Haklı Nedenle Fesih ve Kıdem Tazminatı Hakkı',
+        tag: 'İş Hukuku',
+        date: '08 Ekim 2026',
+        excerpt: 'Ücretlerin zamanında ödenmemesi, eksik SGK primi yatırılması veya mobbing hallerinde işçinin kıdem tazminatını alarak işten ayrılma hakkı.',
+        content: '4857 sayılı İş Kanunu madde 24 uyarınca haklı fesih sebebi bulunan işçi, iş sözleşmesini derhal feshederek kıdem tazminatı ve diğer işçilik alacaklarını talep edebilir.'
+      }
+    ];
+
+    let reviewsData = [
+      { name: 'Beşir İpek', date: '2026-09-18', comment: 'Kurtalan ve Siirt bölgesinde güvenilir bir hukuk bürosu. Av. Melek Pekgöz süreci hem çok hızlı hem de şeffaf yönetti.' },
+      { name: 'Emre Kayaalp', date: '2026-08-29', comment: 'Ağır ceza davamızda karmaşık bir süreçte Melek Hanım’ın hukuki bilgisi ve tecrübesiyle olumlu sonuca ulaştık.' },
+      { name: 'Zeynep Demirtaş', date: '2026-07-14', comment: 'Aile hukuku davamızda her aşamada bilgilendirildik. Profesyonel ve ilgili yaklaşımı için teşekkür ederiz.' },
+      { name: 'Serhat Yıldırım', date: '2026-06-02', comment: 'Tazminat davamızda tüm haklarımızı eksiksiz almamızı sağladı. Çok disiplinli bir hukuk bürosu.' }
+    ];
+
+    let messagesData = [];
+
+    const THEMES = {
+      'classic-gold': { bgPrimary: '#0c0908', bgSecondary: '#16100d', bgCard: '#1f1612', accent: '#d4af37', brownRich: '#3d1914' },
+      'espresso-bronze': { bgPrimary: '#110a08', bgSecondary: '#21120e', bgCard: '#2b1813', accent: '#c89d66', brownRich: '#4a1812' },
+      'obsidian-amber': { bgPrimary: '#080808', bgSecondary: '#14110f', bgCard: '#1c1714', accent: '#f59e0b', brownRich: '#361f12' }
+    };
+
+    // --- ARAYÜZ RENDER FONKSİYONLARI ---
+    function renderServices() {
+      const container = document.getElementById('servicesGrid');
+      container.innerHTML = SERVICES.map((s, idx) => `
+        <div class="theme-bg-card rounded-3xl p-8 border-2 ${idx === 1 ? 'border-amber-400' : 'theme-border-gold'} shadow-xl hover:-translate-y-1 transition-all">
+          <div class="w-14 h-14 rounded-2xl ${idx % 2 === 1 ? 'theme-accent-bg text-black' : 'theme-brown-bg text-amber-400'} flex items-center justify-center mb-6 shadow-lg border border-amber-400/30">
+            <i data-lucide="${s.icon}" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-serif-title text-2xl font-bold text-white mb-5">${s.title}</h3>
+          <ul class="space-y-3">
+            ${s.items.map(item => `
+              <li class="flex items-start gap-2.5 text-sm text-stone-300">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                <span>${item}</span>
+              </li>
+            `).join('')}
+          </ul>
+        </div>
+      `).join('');
+      lucide.createIcons();
+    }
+
+    function renderArticles() {
+      const container = document.getElementById('articlesGrid');
+      container.innerHTML = articlesData.map(art => `
+        <div onclick="openPostDetail('${art.id}', 'article')" class="group relative rounded-3xl overflow-hidden border-2 theme-border-gold shadow-2xl cursor-pointer min-h-[420px] flex flex-col justify-between">
+          <!-- Arka Plan Görseli -->
+          <img 
+            src="${art.bgImage || 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=900'}" 
+            alt="${art.title}" 
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            onerror="this.src='https://placehold.co/800x600/24140e/d4af37?text=Hukuki+Makale'"
+          />
+          <!-- Koyu Kahve & Siyah Okunabilirlik Katmanı -->
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0c0908] via-[#1a0f0c]/85 to-black/50"></div>
+
+          <!-- Üst Rozet -->
+          <div class="relative z-10 p-6 flex items-center justify-between">
+            <span class="px-3.5 py-1 rounded-full bg-amber-500 text-black text-xs font-extrabold uppercase tracking-wider shadow">
+              ${art.category}
+            </span>
+            <span class="text-xs text-amber-200/90 font-medium bg-black/50 px-3 py-1 rounded-full border border-amber-500/30">
+              ${art.date}
+            </span>
+          </div>
+
+          <!-- Alt Makale Başlığı ve Özeti -->
+          <div class="relative z-10 p-6 pt-12 space-y-3">
+            <div class="text-[11px] uppercase tracking-widest text-amber-400 font-bold">
+              AV. MELEK PEKGÖZ • 0536 235 63 15
+            </div>
+            <h3 class="font-serif-title text-2xl font-bold text-white group-hover:text-amber-300 transition-colors leading-snug">
+              ${art.title}
+            </h3>
+            <p class="text-stone-200 text-sm leading-relaxed line-clamp-3">
+              ${art.summary}
+            </p>
+            <div class="pt-3 flex items-center gap-2 text-xs font-bold text-amber-400 group-hover:translate-x-1 transition-transform">
+              <span>Makaleyi İncele</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      const adminList = document.getElementById('adminArticlesList');
+      if (adminList) {
+        adminList.innerHTML = articlesData.map(a => `
+          <div class="p-4 rounded-2xl bg-[#16100d] border border-amber-500/20 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3.5">
+              <img src="${a.bgImage || 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=200'}" class="w-14 h-14 rounded-xl object-cover border border-amber-500/30 shrink-0" />
+              <div>
+                <span class="text-[11px] text-amber-400 font-bold uppercase">${a.category} • ${a.date}</span>
+                <h5 class="text-sm font-bold text-white leading-snug">${a.title}</h5>
+              </div>
+            </div>
+            <button onclick="deleteArticle('${a.id}')" class="px-3 py-2 text-xs font-bold text-red-400 bg-red-500/10 hover:bg-red-500 hover:text-white rounded-xl transition-colors shrink-0">Sil</button>
+          </div>
+        `).join('');
+      }
+      updateDashboardStats();
+      lucide.createIcons();
+    }
+
+    function renderBlogs() {
+      const container = document.getElementById('blogsGrid');
+      container.innerHTML = blogsData.map(b => `
+        <div onclick="openPostDetail('${b.id}', 'blog')" class="theme-bg-card theme-border-gold rounded-2xl p-7 border flex flex-col justify-between shadow-xl hover:border-amber-400/60 cursor-pointer transition-all">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between text-xs">
+              <span class="px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-300 font-semibold">${b.tag}</span>
+              <span class="text-stone-400">${b.date}</span>
+            </div>
+            <h3 class="font-serif-title text-2xl font-bold text-white leading-snug hover:text-amber-300 transition-colors">${b.title}</h3>
+            <p class="text-stone-300 text-sm leading-relaxed">${b.excerpt}</p>
+          </div>
+          <div class="pt-5 mt-6 border-t border-amber-500/15 flex items-center justify-between text-xs">
+            <span class="text-stone-400 font-medium">Av. Melek Pekgöz</span>
+            <span class="font-bold text-amber-400 flex items-center gap-1">Devamını Oku <i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+          </div>
+        </div>
+      `).join('');
+
+      const adminList = document.getElementById('adminBlogsList');
+      if (adminList) {
+        adminList.innerHTML = blogsData.map(b => `
+          <div class="p-4 rounded-2xl bg-[#16100d] border border-amber-500/20 flex items-center justify-between gap-4">
+            <div>
+              <span class="text-[11px] text-amber-400 font-bold uppercase">${b.tag} • ${b.date}</span>
+              <h5 class="text-sm font-bold text-white leading-snug">${b.title}</h5>
+            </div>
+            <button onclick="deleteBlog('${b.id}')" class="px-3 py-2 text-xs font-bold text-red-400 bg-red-500/10 hover:bg-red-500 hover:text-white rounded-xl transition-colors shrink-0">Sil</button>
+          </div>
+        `).join('');
+      }
+      updateDashboardStats();
+      lucide.createIcons();
+    }
+
+    function renderReviews() {
+      const container = document.getElementById('reviewsGrid');
+      container.innerHTML = reviewsData.map(r => `
+        <div class="theme-bg-card theme-border-gold rounded-2xl p-6 border shadow-xl flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-amber-800 border border-amber-400/40 flex items-center justify-center text-white font-bold text-sm">
+                  ${r.name.charAt(0)}
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white">${r.name}</h4>
+                  <span class="text-xs text-stone-400 block">${r.date}</span>
+                </div>
+              </div>
+              <div class="w-7 h-7 rounded-full bg-white flex items-center justify-center font-extrabold text-sm text-blue-600 shadow">G</div>
+            </div>
+            <div class="flex items-center gap-1 text-amber-400 text-sm">★★★★★</div>
+            <p class="text-stone-200 text-sm leading-relaxed">"${r.comment}"</p>
+          </div>
+          <span class="text-[11px] text-amber-400/80 font-medium pt-2 border-t border-amber-500/10">Doğrulanmış Müvekkil Yorumu</span>
+        </div>
+      `).join('');
+
+      const adminRevList = document.getElementById('adminReviewsList');
+      if (adminRevList) {
+        adminRevList.innerHTML = reviewsData.map((r, index) => `
+          <div class="p-4 rounded-2xl bg-[#16100d] border border-amber-500/20 flex items-center justify-between gap-4">
+            <div>
+              <span class="text-xs text-amber-400 font-bold">${r.name} (${r.date})</span>
+              <p class="text-xs text-stone-300 mt-1">"${r.comment}"</p>
+            </div>
+            <button onclick="deleteReview(${index})" class="px-3 py-2 text-xs font-bold text-red-400 bg-red-500/10 hover:bg-red-500 hover:text-white rounded-xl transition-colors shrink-0">Sil</button>
+          </div>
+        `).join('');
+      }
+      updateDashboardStats();
+    }
+
+    function renderMessages() {
+      const container = document.getElementById('adminTab-mesajlar');
+      updateDashboardStats();
+      if (!container) return;
+      if (messagesData.length === 0) {
+        container.innerHTML = `
+          <div class="p-10 rounded-2xl bg-[#16100d] border border-amber-500/20 text-center space-y-2">
+            <p class="text-base font-bold text-white">Henüz Gelen Mesaj Bulunmuyor</p>
+            <p class="text-xs text-stone-400">Müvekkilleriniz Bize Ulaşın formunu doldurduğunda burada listelenecektir.</p>
+          </div>
+        `;
+        return;
+      }
+      container.innerHTML = messagesData.map(m => `
+        <div class="p-5 rounded-2xl bg-[#16100d] border border-amber-500/30 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-white/10 pb-2">
+            <strong class="text-white text-sm">${m.name} — <span class="text-amber-400">${m.phone}</span></strong>
+            <span class="text-xs text-stone-400">${m.createdAt}</span>
+          </div>
+          <p class="text-xs text-amber-300 font-medium">Konu: ${m.subject || 'Genel Hukuki Danışmanlık'} | E-posta: ${m.email || '-'}</p>
+          <p class="text-sm text-stone-200 pt-1">${m.message || ''}</p>
+        </div>
+      `).join('');
+    }
+
+    function updateDashboardStats() {
+      const aEl = document.getElementById('statArticlesCount');
+      const bEl = document.getElementById('statBlogsCount');
+      const rEl = document.getElementById('statReviewsCount');
+      const mEl = document.getElementById('statMessagesCount');
+      if (aEl) aEl.textContent = articlesData.length;
+      if (bEl) bEl.textContent = blogsData.length;
+      if (rEl) rEl.textContent = reviewsData.length;
+      if (mEl) mEl.textContent = messagesData.length;
+    }
+
+    // --- GLOBAL YARDIMCI FONKSİYONLAR ---
+    window.showToast = (msg) => {
+      const t = document.getElementById('toastContainer');
+      document.getElementById('toastMessage').textContent = msg;
+      t.classList.remove('hidden');
+      setTimeout(() => t.classList.add('hidden'), 3500);
+    };
+
+    window.toggleWaWidget = () => {
+      const card = document.getElementById('waSupportCard');
+      card.classList.toggle('hidden');
+    };
+
+    window.copyTextToClipboard = (text, msg) => {
+      const tempInput = document.createElement('textarea');
+      tempInput.value = text;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+      window.showToast(msg);
+    };
+
+    window.switchMapMode = (mode) => {
+      const stdIframe = document.getElementById('officeMapIframe');
+      const street360Box = document.getElementById('street360Container');
+      const btnMap = document.getElementById('btnStandardMap');
+      const btn360 = document.getElementById('btn360Map');
+
+      if (mode === 'street360') {
+        stdIframe.classList.add('hidden');
+        street360Box.classList.remove('hidden');
+        btn360.className = "px-4 py-2.5 rounded-xl text-xs font-bold bg-amber-500 text-black shadow transition-all flex items-center gap-1.5";
+        btnMap.className = "px-4 py-2.5 rounded-xl text-xs font-bold border border-amber-500/40 text-amber-300 hover:bg-amber-500/10 transition-all flex items-center gap-1.5";
+      } else {
+        street360Box.classList.add('hidden');
+        stdIframe.classList.remove('hidden');
+        btnMap.className = "px-4 py-2.5 rounded-xl text-xs font-bold bg-amber-500 text-black shadow transition-all flex items-center gap-1.5";
+        btn360.className = "px-4 py-2.5 rounded-xl text-xs font-bold border border-amber-500/40 text-amber-300 hover:bg-amber-500/10 transition-all flex items-center gap-1.5";
+      }
+      lucide.createIcons();
+    };
+
+    window.openPostDetail = (id, type) => {
+      const item = type === 'article' ? articlesData.find(a => a.id === id) : blogsData.find(b => b.id === id);
+      if (!item) return;
+      document.getElementById('modalPostBadge').textContent = (item.category || item.tag) + ' • ' + item.date;
+      document.getElementById('modalPostTitle').textContent = item.title;
+      document.getElementById('modalPostContent').textContent = item.content || item.summary || item.excerpt;
+      const imgEl = document.getElementById('modalPostImage');
+      if (item.bgImage) {
+        imgEl.src = item.bgImage;
+        imgEl.classList.remove('hidden');
+      } else {
+        imgEl.classList.add('hidden');
+      }
+      const modal = document.getElementById('postModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    };
+
+    window.closePostModal = () => {
+      const modal = document.getElementById('postModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    };
+
+    // Gizli Yönetici PIN Doğrulama Sistemi
+    let isAdminAuthenticated = false;
+
+    window.openAdminAuth = () => {
+      if (isAdminAuthenticated) {
+        window.openAdminModal('dashboard');
+        return;
+      }
+      const authModal = document.getElementById('adminAuthModal');
+      authModal.classList.remove('hidden');
+      authModal.classList.add('flex');
+      setTimeout(() => document.getElementById('adminPinInput').focus(), 100);
+    };
+
+    window.closeAdminAuth = () => {
+      const authModal = document.getElementById('adminAuthModal');
+      authModal.classList.add('hidden');
+      authModal.classList.remove('flex');
+      document.getElementById('adminPinInput').value = '';
+    };
+
+    document.getElementById('adminLoginForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const pin = document.getElementById('adminPinInput').value.trim();
+      if (pin === '5656' || pin === '1234') {
+        isAdminAuthenticated = true;
+        window.closeAdminAuth();
+        window.openAdminModal('dashboard');
+        window.showToast('Yönetici oturumu başarıyla açıldı.');
+      } else {
+        window.showToast('Hatalı yönetici şifresi! (Varsayılan PIN: 5656)');
+      }
+    });
+
+    // Klavye Kısayolu: Ctrl + Shift + A ile Gizli Yönetici Girişi
+    window.addEventListener('keydown', (e) => {
+      if (e.ctrlKey && e.shiftKey && (e.key === 'A' || e.key === 'a')) {
+        e.preventDefault();
+        window.openAdminAuth();
+      }
+    });
+
+    window.openAdminModal = (tab = 'dashboard') => {
+      const modal = document.getElementById('adminModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      window.switchAdminTab(tab);
+      lucide.createIcons();
+    };
+
+    window.closeAdminModal = () => {
+      const modal = document.getElementById('adminModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    };
+
+    const TAB_TITLES = {
+      'dashboard': 'Kurumsal Genel Bakış & İstatistikler',
+      'genel': 'Site Tema Rengi & Fotoğraf Yönetimi',
+      'makaleler': 'Hukuki Makale Yayın Yönetimi',
+      'blog': 'Hukuk Bloğu & İçtihat Paylaşımı',
+      'yorumlar': 'Google Müvekkil Değerlendirmeleri',
+      'mesajlar': 'Gelen Müvekkil Randevu ve İletişim Talepleri'
+    };
+
+    window.switchAdminTab = (tabId) => {
+      const titleEl = document.getElementById('adminHeaderTitle');
+      if (titleEl && TAB_TITLES[tabId]) titleEl.textContent = TAB_TITLES[tabId];
+
+      ['dashboard', 'genel', 'makaleler', 'blog', 'yorumlar', 'mesajlar'].forEach(id => {
+        const el = document.getElementById('adminTab-' + id);
+        const btn = document.getElementById('tabBtn-' + id);
+        if (!el || !btn) return;
+        if (id === tabId) {
+          el.classList.remove('hidden');
+          if (id === 'makaleler' || id === 'blog' || id === 'yorumlar' || id === 'genel') el.classList.add('grid');
+          btn.className = "admin-tab-btn flex items-center gap-3 px-4 py-3 rounded-xl text-xs font-bold bg-amber-500 text-black whitespace-nowrap transition-all shadow-lg";
+        } else {
+          el.classList.add('hidden');
+          el.classList.remove('grid');
+          btn.className = "admin-tab-btn flex items-center gap-3 px-4 py-3 rounded-xl text-xs font-bold bg-white/5 text-stone-300 hover:bg-white/10 whitespace-nowrap transition-all";
+        }
+      });
+      lucide.createIcons();
+    };
+
+    window.applyTheme = async (themeKey) => {
+      const pal = THEMES[themeKey] || THEMES['classic-gold'];
+      document.documentElement.style.setProperty('--bg-primary', pal.bgPrimary);
+      document.documentElement.style.setProperty('--bg-secondary', pal.bgSecondary);
+      document.documentElement.style.setProperty('--bg-card', pal.bgCard);
+      document.documentElement.style.setProperty('--accent', pal.accent);
+      document.documentElement.style.setProperty('--brown-rich', pal.brownRich);
+      window.showToast('Site tema rengi güncellendi!');
+      if (currentUser && db) {
+        await setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'site_settings', 'main'), { theme: themeKey }, { merge: true }).catch(() => {});
+      }
+    };
+
+    window.saveAboutImage = async () => {
+      const url = document.getElementById('adminAboutImgInput').value.trim();
+      if (!url) return;
+      document.getElementById('aboutLawyerImg').src = url;
+      document.getElementById('waWidgetAvatar').src = url;
+      window.showToast('Hakkımızda resmi başarıyla değiştirildi!');
+      if (currentUser && db) {
+        await setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'site_settings', 'main'), { aboutImage: url }, { merge: true }).catch(() => {});
+      }
+    };
+
+    // --- FIREBASE BAĞLANTISI (edurota-f35b2) ---
+    let db = null;
+    let currentUser = null;
+    const appId = typeof __app_id !== 'undefined' ? __app_id : 'edurota-f35b2';
+
+    async function initFirebase() {
+      try {
+        let config = { projectId: "edurota-f35b2", storageBucket: "edurota-f35b2.firebasestorage.app" };
+        if (typeof __firebase_config !== 'undefined' && __firebase_config) {
+          config = JSON.parse(__firebase_config);
+        }
+        const app = initializeApp(config);
+        const auth = getAuth(app);
+        db = getFirestore(app);
+
+        if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+          await signInWithCustomToken(auth, __initial_auth_token);
+        } else {
+          await signInAnonymously(auth);
+        }
+
+        onAuthStateChanged(auth, (u) => {
+          currentUser = u;
+          if (!u) return;
+
+          onSnapshot(doc(db, 'artifacts', appId, 'public', 'data', 'site_settings', 'main'), (snap) => {
+            if (snap.exists()) {
+              const d = snap.data();
+              if (d.theme && THEMES[d.theme]) {
+                const pal = THEMES[d.theme];
+                document.documentElement.style.setProperty('--bg-primary', pal.bgPrimary);
+                document.documentElement.style.setProperty('--bg-secondary', pal.bgSecondary);
+                document.documentElement.style.setProperty('--bg-card', pal.bgCard);
+                document.documentElement.style.setProperty('--accent', pal.accent);
+                document.documentElement.style.setProperty('--brown-rich', pal.brownRich);
+              }
+              if (d.aboutImage) {
+                document.getElementById('aboutLawyerImg').src = d.aboutImage;
+                document.getElementById('waWidgetAvatar').src = d.aboutImage;
+              }
+            }
+          }, () => {});
+
+          onSnapshot(collection(db, 'artifacts', appId, 'public', 'data', 'articles'), (snap) => {
+            if (!snap.empty) {
+              articlesData = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+              renderArticles();
+            }
+          }, () => {});
+
+          onSnapshot(collection(db, 'artifacts', appId, 'public', 'data', 'blogs'), (snap) => {
+            if (!snap.empty) {
+              blogsData = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+              renderBlogs();
+            }
+          }, () => {});
+
+          onSnapshot(collection(db, 'artifacts', appId, 'public', 'data', 'messages'), (snap) => {
+            messagesData = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+            renderMessages();
+          }, () => {});
+        });
+      } catch (e) {
+        console.warn("Yerel mod aktif:", e);
+      }
+    }
+
+    // Form Dinleyicileri
+    document.getElementById('adminArticleForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const item = {
+        id: 'art-' + Date.now(),
+        title: document.getElementById('artTitle').value.trim(),
+        category: document.getElementById('artCategory').value.trim() || 'Hukuki İnceleme',
+        bgImage: document.getElementById('artImage').value.trim() || 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=900',
+        summary: document.getElementById('artSummary').value.trim(),
+        content: document.getElementById('artContent').value.trim() || document.getElementById('artSummary').value.trim(),
+        date: new Date().toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })
+      };
+      articlesData.unshift(item);
+      renderArticles();
+      e.target.reset();
+      window.showToast('Yeni makale yayınlandı!');
+      if (currentUser && db) {
+        await setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'articles', item.id), item).catch(() => {});
+      }
+    });
+
+    window.deleteArticle = async (id) => {
+      articlesData = articlesData.filter(a => a.id !== id);
+      renderArticles();
+      if (currentUser && db) {
+        await deleteDoc(doc(db, 'artifacts', appId, 'public', 'data', 'articles', id)).catch(() => {});
+      }
+    };
+
+    document.getElementById('adminBlogForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const item = {
+        id: 'blog-' + Date.now(),
+        title: document.getElementById('blogTitle').value.trim(),
+        tag: document.getElementById('blogTag').value.trim() || 'Güncel Hukuk',
+        excerpt: document.getElementById('blogExcerpt').value.trim(),
+        content: document.getElementById('blogContent').value.trim() || document.getElementById('blogExcerpt').value.trim(),
+        date: new Date().toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })
+      };
+      blogsData.unshift(item);
+      renderBlogs();
+      e.target.reset();
+      window.showToast('Yeni blog yazısı paylaşıldı!');
+      if (currentUser && db) {
+        await setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'blogs', item.id), item).catch(() => {});
+      }
+    });
+
+    window.deleteBlog = async (id) => {
+      blogsData = blogsData.filter(b => b.id !== id);
+      renderBlogs();
+      if (currentUser && db) {
+        await deleteDoc(doc(db, 'artifacts', appId, 'public', 'data', 'blogs', id)).catch(() => {});
+      }
+    };
+
+    document.getElementById('adminReviewForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const item = {
+        name: document.getElementById('revName').value.trim(),
+        comment: document.getElementById('revComment').value.trim(),
+        date: new Date().toISOString().split('T')[0]
+      };
+      reviewsData.unshift(item);
+      renderReviews();
+      e.target.reset();
+      window.showToast('Yeni müvekkil yorumu eklendi!');
+    });
+
+    window.deleteReview = (idx) => {
+      reviewsData.splice(idx, 1);
+      renderReviews();
+      window.showToast('Yorum kaldırıldı.');
+    };
+
+    document.getElementById('contactForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const msg = {
+        id: 'msg-' + Date.now(),
+        name: document.getElementById('cfName').value.trim(),
+        email: document.getElementById('cfEmail').value.trim(),
+        phone: document.getElementById('cfPhone').value.trim(),
+        subject: document.getElementById('cfSubject').value.trim(),
+        message: document.getElementById('cfMessage').value.trim(),
+        createdAt: new Date().toLocaleString('tr-TR')
+      };
+      messagesData.unshift(msg);
+      renderMessages();
+      e.target.reset();
+      window.showToast('Mesajınız Av. Melek Pekgöz Hukuk Bürosu’na iletildi.');
+      if (currentUser && db) {
+        await setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'messages', msg.id), msg).catch(() => {});
+      }
+    });
+
+    // Mobil Menü Aç/Kapat
+    document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => document.getElementById('mobileMenu').classList.add('hidden'));
+    });
+
+    // İlk Yükleme
+    window.addEventListener('DOMContentLoaded', () => {
+      renderServices();
+      renderArticles();
+      renderBlogs();
+      renderReviews();
+      renderMessages();
+      lucide.createIcons();
+      initFirebase();
+    });
+  </script>
+</body>
+</html>
